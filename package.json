@@ -1,0 +1,16 @@
+{
+  "name": "reload-browser-test",
+  "version": "1.0.0",
+  "description": "test for browsersync and gulp",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "max edelstein",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0"
+  }
+}
