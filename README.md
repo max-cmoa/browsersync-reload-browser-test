@@ -1,4 +1,4 @@
-# reload-browser-test
+# browsersync-reload-browser-test
   Example that shows how browsersync works when $ gulp is ran.
   When you want to see the changes in index.html, just open or reload the index.html file.
 
