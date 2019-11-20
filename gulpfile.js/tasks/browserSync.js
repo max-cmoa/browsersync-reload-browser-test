@@ -14,11 +14,11 @@ var browserSyncWatch = function () {
 
   });
 
-  // watch html for changes
+  // watch all .html files from the root directory for changes
   gulp.watch('*.html').on('change', browserSync.reload);
-  // watch css for changes
+  // watch all .css files in the styles directory for changes
   gulp.watch('css/styles.css').on('change', browserSync.reload);
-  // watch javascript for changes
+  // watch all javascript files in the scripts directory for changes
   gulp.watch('scripts/*.js').on('change', browserSync.reload);
   // watch gulpfile 'index.js' for changes
   gulp.watch('gulpfile.js/*.js').on('change', browserSync.reload);
