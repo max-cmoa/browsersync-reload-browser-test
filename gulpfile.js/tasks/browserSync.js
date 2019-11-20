@@ -2,6 +2,9 @@
 var browserSync = require('browser-sync').create();
 var gulp = require('gulp');
 
+// will include methods from javascript.js
+var javascriptTask = require('./javascript.js');
+
 // browserSync watch for changes
 var browserSyncWatch = function () {
   browserSync.init({
@@ -19,7 +22,7 @@ var browserSyncWatch = function () {
   // watch all .css files in the styles directory for changes
   gulp.watch('css/styles.css').on('change', browserSync.reload);
   // watch all javascript files in the scripts directory for changes
-  gulp.watch('scripts/*.js').on('change', browserSync.reload);
+  gulp.watch('scripts/input.js').on('change', gulp.series(javascriptTask, browserSync.reload));
   // watch gulpfile 'index.js' for changes
   gulp.watch('gulpfile.js/*.js').on('change', browserSync.reload);
 
