@@ -1,1 +1,1 @@
-console.log('change me then save and look in the browsers developers console');
+console.log('change input.js in "scripts/input.js" then save and look in the browsers developers console. Note how index.html file uses output.js');

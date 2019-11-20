@@ -21,7 +21,7 @@ var browserSyncWatch = function () {
   gulp.watch('*.html').on('change', browserSync.reload);
   // watch all .css files in the styles directory for changes
   gulp.watch('css/styles.css').on('change', browserSync.reload);
-  // watch all javascript files in the scripts directory for changes
+  // on changed javascript, bundle the javascript then reload the browser
   gulp.watch('scripts/input.js').on('change', gulp.series(javascriptTask, browserSync.reload));
   // watch gulpfile 'index.js' for changes
   gulp.watch('gulpfile.js/*.js').on('change', browserSync.reload);

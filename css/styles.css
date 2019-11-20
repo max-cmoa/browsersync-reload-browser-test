@@ -1,4 +1,9 @@
 /* change this css, save, then look at the localhost */
+
+* {
+  font-size: 18px;
+}
+
 body {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
