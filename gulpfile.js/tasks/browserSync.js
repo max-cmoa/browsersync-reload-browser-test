@@ -25,4 +25,5 @@ var browserSyncWatch = function () {
 
 }
 
+// export the browserSyncWatch function to be used in default.js
 module.exports = browserSyncWatch;

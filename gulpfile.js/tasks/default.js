@@ -2,6 +2,7 @@
   default.js is ran when you type $ gulp in the command line
 */
 
+// required to use gulp object
 var gulp = require('gulp');
 
 // will include methods from browserSync.js
