@@ -32,6 +32,12 @@ var browserSyncWatch = function () {
   // watch gulpfile 'index.js' for changes
   gulp.watch('gulpfile.js/*.js').on('change', browserSync.reload);
 
+  // watch all gulp tasks for changes
+  gulp.watch('gulpfile.js/tasks/*.js').on('change', browserSync.reload);
+
+  // comment to be changed to show how if you modify any js file in tasks, browserSync will reload the browser
+  console.log('watch the Browsersync console and change this text. It does not get more meta than this');
+
 } // end of browserSyncWatch function variable
 
 // export the browserSyncWatch function to be used in default.js
