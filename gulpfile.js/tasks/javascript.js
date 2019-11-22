@@ -8,6 +8,7 @@ var javascriptTask = function () {
                   'scripts/input.js',
                   'scripts/inputTwo.js',
                   'scripts/inputThree.js',
+                  'scripts/middle.js',
                   'scripts/fourth.js',
                   'scripts/fifth.js',
                   'scripts/sixth.js',

@@ -1,1 +1,1 @@
-console.log('8th.js was rendered ins');
+console.log('8th.js was rendered in');
