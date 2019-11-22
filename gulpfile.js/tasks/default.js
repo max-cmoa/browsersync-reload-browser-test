@@ -1,5 +1,5 @@
 /*
-  default.js is ran when you type $ gulp in the command line
+  default tasks that are ran when you type $ gulp in the command line
 */
 
 // required to use gulp object
@@ -16,11 +16,13 @@ var browserSyncWatch = require('./browserSync.js');
 
 var defaultGulpTask = function () {
 
-  // call the browserSync watch method
+  // call the browserSync watch method to watch all files
   browserSyncWatch();
 
+  // call css tasks
   cssTask();
-  // used to bundle javascript files because browsersync won't bundle them
+
+  // used to bundle javascript files because browsersync won't update them
   javascriptTask();
 }
 
