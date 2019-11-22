@@ -5,12 +5,23 @@
 // required to use gulp object
 var gulp = require('gulp');
 
+// will include methods from css.js
+var cssTask = require('./css.js');
+
+// will include methods from javascript.js
+var javascriptTask = require('./javascript.js');
+
 // will include methods from browserSync.js
 var browserSyncWatch = require('./browserSync.js');
 
 var defaultGulpTask = function () {
+
   // call the browserSync watch method
   browserSyncWatch();
+
+  cssTask();
+  // used to bundle javascript files because browsersync won't bundle them
+  javascriptTask();
 }
 
 // default gulp task that is run when you type gulp on the command line
