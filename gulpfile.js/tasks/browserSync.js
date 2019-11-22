@@ -26,8 +26,8 @@ var browserSyncWatch = function () {
   // will include methods from javascript.js
   var javascriptTask = require('./javascript.js');
 
-  // on changed javascript, bundle the javascript then reload the browser
-  gulp.watch('scripts/input.js').on('change', gulp.series(javascriptTask, browserSync.reload));
+  // on any changed javascript files, bundle the javascript then reload the browser
+  gulp.watch('scripts/*.js').on('change', gulp.series(javascriptTask, browserSync.reload));
 
   // watch gulpfile 'index.js' for changes
   gulp.watch('gulpfile.js/*.js').on('change', browserSync.reload);
