@@ -9,3 +9,5 @@ console.log('fourth in the rendering orders');
 console.log('fifth.js was rendered in');
 
 console.log('sixth.js was rendered in');
+
+console.log('seventh.js was rendered ins');
