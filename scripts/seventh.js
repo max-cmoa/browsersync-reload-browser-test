@@ -1,1 +1,1 @@
-console.log('seventh.js was rendered ins');
+console.log('seventh.js was rendered in');
