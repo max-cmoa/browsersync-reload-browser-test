@@ -6,11 +6,12 @@ var javascriptTask = function () {
   return gulp.src([
                   'scripts/input.js',
                   'scripts/last.js',
+                  'scripts/test.js',
     ]) // files to be bundles
     .pipe(concat('output.js')) // concatenated files into one output.js file
     .pipe(gulp.dest('production/scripts/')); // directory output.js will be placed in
 };
 
-gulp.task('javascript', javascriptTask);
+gulp.task('javascriptTask', javascriptTask);
 
 module.exports = javascriptTask;
