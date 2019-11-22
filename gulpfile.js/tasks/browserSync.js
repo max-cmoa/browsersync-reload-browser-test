@@ -1,6 +1,7 @@
 // to use browserSync methods
 var browserSync = require('browser-sync').create();
 var gulp = require('gulp');
+var gulpCache = require('gulp-cache');
 
 // browserSync watch for changes
 var browserSyncWatch = function () {
@@ -10,7 +11,7 @@ var browserSyncWatch = function () {
     server: {
       baseDir: './',
       index: 'index.html',
-    }
+    },
 
   });
 

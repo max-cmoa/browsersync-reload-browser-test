@@ -5,8 +5,10 @@
       $ cd to-this-directory
       $ gulp  
 
-## Weird browsersync issue with concatenating javascript files
-  browsersync won't reload newly added .js files in the browser when you are running browsersync. The solution is to stop ^c the running default gulp task and run the gulp command again so all javascript files will be concatenated to output.js
+##  browsersync cacheing issue files
+  Problem: If you add or subtract files, browsersync won't see them.
+  Solution: stop browsersync and run $ gulp javascriptTask
+  then run $ gulp to start browsersync and the cached files will be included now
 
 
 ## Reference
