@@ -16,11 +16,17 @@ var browserSyncWatch = require('./browserSync.js');
 
 var defaultGulpTask = function () {
 
-  // call css tasks
-  cssTask();
+  return new Promise(function(resolve, reject) {
+   console.log("default task Started");
 
-  // used to bundle javascript files because browsersync won't update them
-  javascriptTask();
+   // call css tasks
+   cssTask();
+
+   // used to bundle javascript files because browsersync won't update them
+   javascriptTask();
+
+   resolve();
+ });
 
 }
 
