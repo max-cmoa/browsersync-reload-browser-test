@@ -11,7 +11,6 @@ var browserSyncWatch = function () {
     // tell browsersync to use this dir and serve it as a mini-server
     server: {
       baseDir: './',
-      index: 'index.html',
     },
 
   });
@@ -29,9 +28,9 @@ var browserSyncWatch = function () {
   var javascriptTask = require('./javascript.js');
 
   // on any changed javascript files, bundle the javascript then reload the browser
-  //gulp.watch('scripts/*.js').on('change', gulp.series(javascriptTask, browserSync.reload));
+  gulp.watch('scripts/*.js').on('change', gulp.series(javascriptTask, browserSync.reload));
 
-  gulp.watch('./scripts/**/*.js', gulp.series('javascriptTask', browserSync.reload ) );
+  //gulp.watch('./scripts/**/*.js', gulp.series('javascriptTask', browserSync.reload ) );
 
   // watch gulpfile 'index.js' for changes
   gulp.watch('gulpfile.js/*.js').on('change', browserSync.reload);
