@@ -3,7 +3,8 @@
 
 ## How to run
       $ cd to-this-directory
-      $ gulp  
+      $ gulp taskName
+      to see tasks type $ gulp --tasks
 
 ##  browsersync cacheing issue files
   Problem: If you add or subtract files, browsersync won't see them.
