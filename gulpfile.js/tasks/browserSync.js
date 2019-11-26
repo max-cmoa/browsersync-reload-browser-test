@@ -1,11 +1,12 @@
 // to use browserSync methods
 var browserSync = require('browser-sync').create();
 var gulp = require('gulp');
-var gulpCache = require('gulp-cache');
 
 // browserSync watch for changes
 var browserSyncWatch = function () {
   browserSync.init({
+
+    injectChanges: true,
 
     // tell browsersync to use this dir and serve it as a mini-server
     server: {
