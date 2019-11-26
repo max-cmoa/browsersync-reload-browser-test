@@ -14,3 +14,4 @@
 ## Reference
   See the <ins>[browsersync documentation](https://www.browsersync.io/docs/api#api-init)</ins>.
   See the <ins>[gulpjs documentation](https://gulpjs.com/docs/en/getting-started/quick-start)</ins>
+  See this note about <ins>[browsersync injection](https://stackoverflow.com/questions/31163754/browser-sync-does-not-refresh-page-after-changes-with-gulp?rq=1)</ins>. This would not work for me. Perhaps I had the syntax incorrect.
