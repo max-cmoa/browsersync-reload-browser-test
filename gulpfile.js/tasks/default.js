@@ -16,14 +16,12 @@ var browserSyncWatch = require('./browserSync.js');
 
 var defaultGulpTask = function () {
 
-  // call the browserSync watch method to watch all files
-  browserSyncWatch();
-
   // call css tasks
-  //cssTask();
+  cssTask();
 
   // used to bundle javascript files because browsersync won't update them
-  //javascriptTask();
+  javascriptTask();
+
 }
 
 // default gulp task that is run when you type gulp on the command line

@@ -7,8 +7,7 @@
 
 ##  browsersync cacheing issue files
   Problem: If you add or subtract files, browsersync won't see them.
-  Solution: stop browsersync and run $ gulp javascriptTask
-  then run $ gulp to start browsersync and the cached files will be included now
+  Solution: stop browsersync then restart browsersync and make sure the files are added
 
 
 ## Reference

@@ -43,5 +43,7 @@ var browserSyncWatch = function () {
 
 } // end of browserSyncWatch function variable
 
+gulp.task('watch', browserSyncWatch);
+
 // export the browserSyncWatch function to be used in default.js
 module.exports = browserSyncWatch;
