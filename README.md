@@ -4,9 +4,15 @@
 ## Starting
       $ cd to-this-directory
       $ npm install
-      $ gulp taskName
+
       See all gulp tasks type
       $ gulp --tasks
+
+      To use browsersync type
+      $ gulp watch
+
+      To do a normal build type
+      $ gulp
 
 ##  browsersync cacheing issue files
   Problem: If you add or subtract files, browsersync won't see them.

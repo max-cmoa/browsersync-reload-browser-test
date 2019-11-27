@@ -8,6 +8,9 @@ var browserSyncWatch = function () {
 
     injectChanges: true,
 
+    port: 8080,
+    domain: '0.0.0.0',
+
     // tell browsersync to use this dir and serve it as a mini-server
     server: {
       baseDir: './',
