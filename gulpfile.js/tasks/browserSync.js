@@ -5,6 +5,9 @@ var browserSync = require('browser-sync').create();
 var browserSyncWatch = function () {
   browserSync.init({
 
+    // browsers to open the site with
+    browser: ["safari"/*, "google chrome", "firefox"*/],
+
     injectChanges: true,
 
     port: 8080,
