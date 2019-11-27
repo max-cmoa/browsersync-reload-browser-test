@@ -8,6 +8,12 @@ var browserSyncWatch = function () {
     // browsers to open the site with
     browser: ["safari"/*, "google chrome", "firefox"*/],
 
+    // reload each browser when browsersync is restarted
+    reloadOnRestart: true,
+
+    // don't minify client javascript
+    minify: false,
+
     injectChanges: true,
 
     port: 8080,
