@@ -1,6 +1,5 @@
-// to use browserSync methods
-var browserSync = require('browser-sync').create();
 var gulp = require('gulp');
+var browserSync = require('browser-sync').create();
 
 // browserSync watch for changes
 var browserSyncWatch = function () {
