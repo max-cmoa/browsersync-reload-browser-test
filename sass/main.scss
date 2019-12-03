@@ -11,6 +11,7 @@
 
 // include all layout sass
 @import "partials/layouts/body";
+@import "partials/layouts/content";
 @import "partials/layouts/footer";
 @import "partials/layouts/header";
 @import "partials/layouts/navigation";
@@ -20,4 +21,5 @@
 @import "partials/base/buttons";
 @import "partials/base/forms";
 @import "partials/base/lists";
+@import "partials/base/logo";
 @import "partials/base/typography";
