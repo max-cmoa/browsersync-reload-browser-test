@@ -25,6 +25,9 @@ var defaultGulpTask = function () {
    // call css tasks
    cssTask();
 
+   // call sass tasks
+   sassTask();
+
    // used to bundle javascript files because browsersync won't update them
    javascriptTask();
 
