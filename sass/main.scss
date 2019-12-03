@@ -1,7 +1,23 @@
-/* we use .scss instead of .sass due to .scss having the easier syntax to use */
-/* this file is used to include various sass files for the purpose of modular design */
+/* we use .scss instead of .sass due to .scss having the easier syntax to use
+   this file is used to include various sass files
+   the purpose of having these sass partials is for modular design
+*/
 
-// include all sass from the _partial.scss file
+// include all utility sass, which should come first
+@import "partials/utility/fonts";
+@import "partials/utility/grid-settings";
+@import "partials/utility/mixins";
 @import "partials/utility/variables";
 
+// include all layout sass
 @import "partials/layouts/body";
+@import "partials/layouts/footer";
+@import "partials/layouts/header";
+@import "partials/layouts/navigation";
+@import "partials/layouts/section";
+
+// include all base sass
+@import "partials/base/buttons";
+@import "partials/base/forms";
+@import "partials/base/lists";
+@import "partials/base/typography";
