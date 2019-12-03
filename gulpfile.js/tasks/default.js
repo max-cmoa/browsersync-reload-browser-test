@@ -8,6 +8,9 @@ var gulp = require('gulp');
 // will include methods from css.js
 var cssTask = require('./css.js');
 
+// include methods from sass.js
+var sassTask = require('./sass.js');
+
 // will include methods from javascript.js
 var javascriptTask = require('./javascript.js');
 
