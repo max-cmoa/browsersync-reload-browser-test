@@ -1,6 +1,11 @@
 /* we use .scss instead of .sass due to .scss having the easier syntax to use
    this file is used to include various sass files
    the purpose of having these sass partials is for modular design
+
+   If you plan to add a partial file be sure to include an underscore
+   and add @import "partials/directoryName/_yourFileName.scss"; to this file.
+   Also if you are using browsersync, make sure your changes are applied.
+   You may need to restart browsersync
 */
 
 // include all utility sass, which should come first
