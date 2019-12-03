@@ -15,7 +15,7 @@
       To do a normal build type
       $ gulp
 
-##  browsersync cacheing issue files
+##  browsersync cacheing issue
   Problem: If you add or subtract files, browsersync won't see them.
   Solution: stop browsersync then restart browsersync and make sure the files are added
 
