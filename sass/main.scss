@@ -1,4 +1,7 @@
 /* we use .scss instead of .sass due to .scss having the easier syntax to use */
+/* this file is used to include various sass files for the purpose of modular design */
 
 // include all sass from the _partial.scss file
-@import "partials/partial";
+@import "partials/utility/variables";
+
+@import "partials/layouts/body";
