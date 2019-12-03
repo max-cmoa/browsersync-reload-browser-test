@@ -39,7 +39,7 @@ var browserSyncWatch = function () {
   var sassTask = require('./sass.js');
 
   // watch all .scss sass files in the sass directory for changes
-  gulp.watch('sass/main.scss').on('change', gulp.series(sassTask, browserSync.reload));
+  gulp.watch('sass/**/*.scss').on('change', gulp.series(sassTask, browserSync.reload));
 
   // will include methods from javascript.js
   var javascriptTask = require('./javascript.js');

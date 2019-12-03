@@ -1,7 +1,4 @@
 /* we use .scss instead of .sass due to .scss having the easier syntax to use */
 
-$color : brown;
-
-body {
-  background-color: $color;
-}
+// include all sass from the _partial.scss file
+@import "partials/partial";
