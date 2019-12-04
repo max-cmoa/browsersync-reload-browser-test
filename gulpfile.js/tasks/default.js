@@ -5,16 +5,19 @@
 // required to use gulp object
 var gulp = require('gulp');
 
-// will include methods from css.js
+// include methods from css.js
 var cssTask = require('./css.js');
 
 // include methods from sass.js
 var sassTask = require('./sass.js');
 
-// will include methods from javascript.js
+// include methods from javascript.js
 var javascriptTask = require('./javascript.js');
 
-// will include methods from browserSync.js
+// include methods from phpPages.js
+var phpPagesTask = require('./phpPages.js')
+
+// include methods from browserSync.js
 var browserSyncWatch = require('./browserSync.js');
 
 var defaultGulpTask = function () {
@@ -31,6 +34,9 @@ var defaultGulpTask = function () {
    // used to bundle javascript files because browsersync won't update them
    javascriptTask();
 
+   phpPagesTask
+
+   // to tell the gulp task has completed every task
    resolve();
  });
 
