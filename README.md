@@ -1,15 +1,16 @@
-# browsersync-reload-browser-test
+# simple-starter-theme
 
-  Example that shows how browsersync executes tasks when changes are detected. When you want to see the changes in index.html, just open or reload the index.html file. Browsersync will start a server on localhost on port 3000. (no index.html opening required)
+  A simple starter theme for WordPress that uses abstracted sass and gulp files.
 
 ## Starting
+
       $ cd to-this-directory
       $ npm install
 
       See all gulp tasks type
       $ gulp --tasks
 
-      To use browsersync
+      To use browsersync to watch files and reload when changes are detected
       $ gulp watch
 
       To do a normal build type
