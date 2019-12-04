@@ -18,6 +18,11 @@ var browserSyncWatch = function () {
   // watch all .css files in the styles directory for changes
   gulp.watch('./styles.css').on('change', gulp.series(cssTask, browserSync.reload));
 
+  var imagesTask = require('./images.js');
+
+  // watch all images in the images directory for changes
+  gulp.watch('assets/images/**/*').on('change', gulp.series(imagesTask, browserSync.reload));
+
   // will include methods from sass.js
   var sassTask = require('./sass.js');
 
