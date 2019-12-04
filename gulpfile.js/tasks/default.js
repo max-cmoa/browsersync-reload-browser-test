@@ -8,6 +8,9 @@ var gulp = require('gulp');
 // include methods from css.js
 var cssTask = require('./css.js');
 
+// include methods from fonts.js
+var fontsTask = require('./fonts.js');
+
 // include methods from images.js
 var imagesTask = require('./images.js');
 
@@ -40,6 +43,9 @@ var defaultGulpTask = function () {
 
    // call css tasks
    cssTask();
+
+   // call fonts tasks
+   fontsTask();
 
    // call images tasks
    imagesTask();

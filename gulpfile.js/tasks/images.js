@@ -1,5 +1,5 @@
 /*
-    gulp all imagesfor production
+    gulp all images for production
 */
 
 var gulp = require('gulp');
