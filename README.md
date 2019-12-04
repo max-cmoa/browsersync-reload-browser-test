@@ -24,6 +24,11 @@
 
   * **gulpfile.js directory** contains abstracted gulp tasks for making the production version of this theme.
 
+  * **templates directory*8 contains php template files
+      **pages directory** for WordPress pages
+      **partials directory** for partials to be included on multiple pages or posts
+      **posts directory** for WordPress posts
+
   * **.gitignore file** contains directories and files that will not be commited/saved to Github
 
   * **package.json file** contains json for npm packages required for sass and gulp to work.
