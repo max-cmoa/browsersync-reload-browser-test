@@ -9,6 +9,9 @@ var browserSync = require('browser-sync').create();
 var browserSyncWatch = function () {
   browserSync.init({
 
+    // use the Local By Flywheel localhost
+    proxy: "192.168.95.100",
+
     // browsers to open the site with
     browser: ["safari"/*, "google chrome", "firefox"*/],
 

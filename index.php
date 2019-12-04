@@ -15,7 +15,8 @@
 
    <h1 class='standardHeadingOne'>Welcome to the simple-starter-theme</h1>
 
-   <p class='standardParagraph'>Please explore the files in the simple-starter-theme directory</p>
+   <p class='standardParagraph'>Please explore the files in the simple-starter-theme directory.
+   Make sure that you are either using browsersync or you run $ gulp when you change any sass</p>
 
   </body>
   <footer>
