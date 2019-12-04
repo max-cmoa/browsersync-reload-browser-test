@@ -1,20 +1,15 @@
 <html>
-
+ <!-- This should be the only fallback template -->
  <head>
+
+  <!-- use css and javascript enqueued in functions.php -->
   <?php wp_head(); ?>
 
-     <link rel="stylesheet" type="text/css" href="/production/assets/sass/main.css">
  </head>
 
-<?php
-/*
-  This file should be the only php fallback template for the simple-starter-theme.
-  Relying on the WordPress template hierarchy can be a mess to trace.
-*/
-?>
+  <body>
 
-<p class='standardParagraph'>hi</p>
+   <p class='standardParagraph'>hi</p>
 
-<?php echo (get_template_directory_uri() . '/production/assets/sass/main.css' ); ?>
-
+  </body>
 </html>

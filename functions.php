@@ -12,4 +12,9 @@ function enqueue_css() {
 }
 
 // hook to connect wp execution process to our function
-add_action('wp_enqueue_scripts', 'enqueue_css', 10);
+add_action('wp_enqueue_scripts', 'enqueue_css');
+
+// enqueue our output.js file
+function enqueue_javascript() {
+
+}
