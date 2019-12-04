@@ -26,7 +26,7 @@
 
   * **gulpfile.js directory** contains abstracted gulp tasks for making the production version of this theme.
 
-  * **templates directory*8 contains php template files
+  * **templates directory** contains php template files
       **pages directory** for WordPress pages
 
       **partials directory** for partials to be included on multiple pages or posts
