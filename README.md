@@ -15,7 +15,7 @@
       See all gulp tasks type
       $ gulp --tasks
 
-      To use browsersync to watch files and reload when changes are detected
+      To use browsersync to watch files and reload when changes are detected, change the proxy to your websiteName.local or whatever proxy you are using
       $ gulp watch
 
       To do a normal build type

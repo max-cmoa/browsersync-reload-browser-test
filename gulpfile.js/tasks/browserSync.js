@@ -8,33 +8,9 @@ var browserSync = require('browser-sync').create();
 // browserSync watch for changes
 var browserSyncWatch = function () {
   browserSync.init({
-
-    // use the Local By Flywheel localhost
-    proxy: "192.168.95.100",
-
-    // browsers to open the site with
-    browser: ["safari"/*, "google chrome", "firefox"*/],
-
-    // reload each browser when browsersync is restarted
-    reloadOnRestart: true,
-
-    // don't minify client javascript
-    minify: false,
-
-    injectChanges: true,
-
-    port: 8080,
-    domain: '0.0.0.0',
-
-    // tell browsersync to use this dir and serve it as a mini-server
-    server: {
-      baseDir: './',
-    },
-
-  });
-
-  // watch all .html files from the root directory for changes
-  gulp.watch('*.html').on('change', browserSync.reload);
+    proxy: "wordpress.local", // change this to your websiteName.local or ipv4
+    notify: false,
+  },)
 
   // will include methods from css.js
   var cssTask = require('./css.js');
@@ -53,6 +29,22 @@ var browserSyncWatch = function () {
 
   // on any changed javascript files, bundle the javascript then reload the browser
   gulp.watch('assets/javascript/*.js').on('change', gulp.series(javascriptTask, browserSync.reload));
+
+  var phpFallbackTask = require('./phpFallback.js');
+
+  gulp.watch('./index.php').on('change', gulp.series(phpFallbackTask, browserSync.reload));
+
+  var phpPagesTask = require('./phpPages.js');
+
+  gulp.watch('templates/pages/*.php').on('change', gulp.series(phpPagesTask, browserSync.reload));
+
+  var phpPartialsTask = require('./phpPartials.js');
+
+  gulp.watch('templates/partials/**/*.php').on('change', gulp.series(phpPartialsTask, browserSync.reload));
+
+  var phpPostsTask = require('./phpPosts.js');
+
+  gulp.watch('templates/posts/*.php').on('change', gulp.series(phpPostsTask, browserSync.reload));
 
 } // end of browserSyncWatch function variable
 
