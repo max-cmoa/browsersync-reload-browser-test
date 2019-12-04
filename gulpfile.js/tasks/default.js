@@ -1,5 +1,5 @@
 /*
-  default tasks that are ran when you type $ gulp in the command line
+  default tasks that are ran when you type "gulp" in the command line
 */
 
 // required to use gulp object

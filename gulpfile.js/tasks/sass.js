@@ -1,4 +1,6 @@
-/* this file is used to compile sass to css */
+/*
+    compile sass to css for production
+*/
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');

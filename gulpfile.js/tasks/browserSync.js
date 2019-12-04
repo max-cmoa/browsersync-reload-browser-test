@@ -1,3 +1,7 @@
+/*
+    Idea is for browsersync to detect changes and reload your browser
+*/
+
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 

@@ -1,10 +1,7 @@
 /*
-  idea is to not have one large gulp file, rather each file will
-  handle a specific task.
-
-  to create a new task, add a new fileName.extension to the task directory
-  gulpfile.js/tasks/default.js is ran when you type $gulp in the cli
-
+    idea is to not have one large gulp file, rather each file will
+    handle a specific gulp task.
+    to create a new task, add a new "taskName.js" to the task directory
 */
 
 var requireDirectory = require('require-dir');

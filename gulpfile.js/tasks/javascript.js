@@ -1,3 +1,7 @@
+/*
+    gulp all javascript files for production
+*/
+
 var concat = require('gulp-concat');
 var gulp = require('gulp');
 //var browserSync = require('browser-sync').create();

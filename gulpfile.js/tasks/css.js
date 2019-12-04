@@ -1,3 +1,7 @@
+/*
+    gulp the styles.css for production
+*/
+
 var gulp = require('gulp');
 var cleanCSS = require('gulp-clean-css');
 
