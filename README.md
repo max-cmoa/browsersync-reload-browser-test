@@ -1,6 +1,6 @@
 # simple-starter-theme
 
-  A starter theme to teach how abstractions can make programming and maintenance easier.
+  A starter theme to teach how abstractions can make programming and maintenance easier. This project uses .scss Sass to make writing css easier. The project also comes with gulp abstracted to easily modify or add new gulp tasks.
 
 ## Starting
 
