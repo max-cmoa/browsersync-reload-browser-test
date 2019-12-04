@@ -26,8 +26,15 @@
 
   * **templates directory*8 contains php template files
       **pages directory** for WordPress pages
+
       **partials directory** for partials to be included on multiple pages or posts
+
       **posts directory** for WordPress posts
+        **footers directory** for html footers
+
+        **headers directory** for html headers like metadata and site information
+
+        **navigations directory** for html navigation
 
   * **.gitignore file** contains directories and files that will not be commited/saved to Github
 
