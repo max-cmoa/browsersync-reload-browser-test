@@ -2,7 +2,7 @@
 
   A starter theme to teach how abstractions can make programming and maintenance easier. This project uses <ins>[.scss files with Sass syntax](https://sass-lang.com/documentation/syntax)</ins> to make css modular. Gulp has been abstracted to easily modify or add new gulp tasks.
 
-  Always remember these words: **Make one change at a time, save your change, reload your browser, and see if you change worked**.
+  Always remember these words: **Make one change/save at a time, and reload your browser to see if your change worked**.
 
 # Starting
 
