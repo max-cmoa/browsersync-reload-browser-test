@@ -4,6 +4,6 @@
   Relying on the WordPress template hierarchy can be a mess to trace.
 */
 
-  echo ('<div>Sample text</div>');
+  echo ('<div body_class(); >Sample text</div>');
 
 ?>
