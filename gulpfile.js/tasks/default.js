@@ -14,6 +14,9 @@ var sassTask = require('./sass.js');
 // include methods from javascript.js
 var javascriptTask = require('./javascript.js');
 
+// include methods from phpFallback.js
+var phpFallbackTask = require('./phpFallback.js');
+
 // include methods from phpPages.js
 var phpPagesTask = require('./phpPages.js')
 
@@ -23,6 +26,7 @@ var browserSyncWatch = require('./browserSync.js');
 var defaultGulpTask = function () {
 
   return new Promise(function(resolve, reject) {
+
    console.log("default task Started");
 
    // call css tasks
@@ -34,9 +38,13 @@ var defaultGulpTask = function () {
    // used to bundle javascript files because browsersync won't update them
    javascriptTask();
 
-   phpPagesTask
+   // call php fallback task
+   phpFallbackTask();
 
-   // to tell the gulp task has completed every task
+   // call php pages task
+   phpPagesTask();
+
+   // to resolve the promise and tell the gulp task has completed every task
    resolve();
  });
 

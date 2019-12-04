@@ -7,7 +7,6 @@ var gulp = require('gulp');
 var phpFallbackTask = function() {
   return gulp.src([
                   './index.php',
-
     ])
     .pipe(gulp.dest('production/')); // place php fallback in root directory
 };

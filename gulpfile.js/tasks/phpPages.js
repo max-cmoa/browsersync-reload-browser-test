@@ -5,7 +5,7 @@
 var gulp = require('gulp');
 
 var phpPagesTask = function() {
-  return gulp.src('templates/pages')
+  return gulp.src('templates/pages/*.php')
     .pipe(gulp.dest('production/templates/pages')); // place php pages
 };
 
