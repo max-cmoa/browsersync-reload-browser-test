@@ -31,6 +31,8 @@
 
   * **.gitignore file** contains directories and files that will not be commited/saved to Github
 
+  * **functions.php file** contains functions for WordPress to enqueue main.css and main.js files.
+
   * **package.json file** contains json for npm packages required for sass and gulp to work.
 
   * **package-lock.json file** automatically created by package.json.
