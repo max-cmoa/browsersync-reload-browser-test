@@ -1,6 +1,6 @@
 # simple-starter-theme
 
-  A simple starter theme for WordPress that uses abstracted sass and gulp files.
+  A starter theme to teach how abstractions can make programming and maintenance easier.
 
 ## Starting
 
