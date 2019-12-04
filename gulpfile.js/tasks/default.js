@@ -20,6 +20,12 @@ var phpFallbackTask = require('./phpFallback.js');
 // include methods from phpPages.js
 var phpPagesTask = require('./phpPages.js')
 
+// include methods from phpPartials.js
+var phpPartialsTask = require('./phpPartials.js');
+
+// include methods from phpPosts.js
+var phpPostsTask = require('./phpPosts.js');
+
 // include methods from browserSync.js
 var browserSyncWatch = require('./browserSync.js');
 
@@ -43,6 +49,12 @@ var defaultGulpTask = function () {
 
    // call php pages task
    phpPagesTask();
+
+   // call php partials task
+   phpPartialsTask();
+
+   // call php posts task
+   phpPostsTask();
 
    // to resolve the promise and tell the gulp task has completed every task
    resolve();
