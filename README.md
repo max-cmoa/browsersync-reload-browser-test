@@ -2,7 +2,7 @@
 
   A starter theme to teach how abstractions can make programming and maintenance easier. This project uses <ins>.scss file syntax Sass</ins> to make formatting easier to write. Gulp has been abstracted to easily modify or add new gulp tasks.
 
-## Starting
+# Starting
 
       $ cd to-this-directory
       $ npm install
@@ -15,6 +15,9 @@
 
       To do a normal build type
       $ gulp
+
+# Where is the production folder that was created by gulp?
+  This file is hidden by the .gitignore file.
 
 ##  browsersync cacheing issue
   Problem: If you add or subtract files, browsersync won't see them.
