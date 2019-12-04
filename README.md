@@ -16,6 +16,23 @@
       To do a normal build type
       $ gulp
 
+# Directories and Files explained
+  * **assets directory** contain fonts, icons, images, javascript files, and sass files.
+
+  * **gulpfile.js directory** contains abstracted gulp tasks for making the production version of this theme.
+
+  * **.gitignore file** contains directories and files that will not be commited/saved to Github
+
+  * **package.json file** contains json for npm packages required for sass and gulp to work.
+
+  * **package-lock.json file** automatically created by package.json.
+
+  * **README.md file** contains useful information about the project.
+
+  * **screenshot.png image** is an image that is displayed for this theme in the dashboard /wp-admin themes section.
+
+  * **styles.css** contains metadata for information about this theme and is displayed in the dashboard /wp-admin themes section
+
 # Where is the production folder that was created by gulp?
   This file is hidden by the .gitignore file.
 
