@@ -4,7 +4,7 @@
 
 var gulp = require('gulp');
 
-var imagesTask = function() {
+var fontsTask = function() {
   return gulp.src('./assets/fonts/*') // fonts to be bundled
 
     .pipe(gulp.dest('production/assets/fonts')); // directory to be placed in
