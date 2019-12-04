@@ -7,6 +7,9 @@
       $ cd to-this-directory
       $ npm install
 
+      If a npm package install fails, find the issue and you may need install <ins>[nvm](https://github.com/nvm-sh/nvm/blob/master/README.md)</ins>
+      $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+
       See all gulp tasks type
       $ gulp --tasks
 
@@ -29,12 +32,12 @@
 
   * **README.md file** contains useful information about the project.
 
-  * **screenshot.png image** is an image that is displayed for this theme in the dashboard /wp-admin themes section.
+  * **screenshot.png image** is an image that is displayed for this theme in the dashboard /wp-admin themes section. Learn more about <ins>[screenshot requirements](https://wpism.com/wordpress-theme-screenshot/)</ins>
 
   * **styles.css** contains metadata for information about this theme and is displayed in the dashboard /wp-admin themes section
 
-# Where is the production folder that was created by gulp?
-  This file is hidden by the .gitignore file.
+# Where is the production directory that was created by gulp?
+  The production directory is hidden by the .gitignore file.
 
 ##  browsersync cacheing issue
   Problem: If you add or subtract files, browsersync won't see them.
