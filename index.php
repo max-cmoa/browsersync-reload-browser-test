@@ -13,7 +13,9 @@
  </head>
   <body>
 
-   <p class='standardParagraph'>hi</p>
+   <h1 class='standardHeadingOne'>Welcome to the simple-starter-theme</h1>
+
+   <p class='standardParagraph'>Please explore the files in the simple-starter-theme directory</p>
 
   </body>
   <footer>
