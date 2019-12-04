@@ -5,7 +5,7 @@
    <meta charset="utf-8">
    <title>simple-starter-theme</title>
 
-  <!-- use css and javascript enqueued in functions.php -->
+  <!-- use css enqueued in functions.php in the header -->
   <!-- Open the console > stylesheets > main.css -->
   <!-- You will see css WordPress also enqueues by default -->
   <?php wp_head(); ?>
@@ -16,4 +16,7 @@
    <p class='standardParagraph'>hi</p>
 
   </body>
+  <footer>
+    
+  </footer>
 </html>
