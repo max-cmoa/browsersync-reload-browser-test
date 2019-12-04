@@ -52,9 +52,6 @@
 
   * **styles.css** contains metadata for information about this theme and is displayed in the dashboard /wp-admin themes section
 
-# Where is the production directory that was created by gulp?
-  The production directory is hidden by the .gitignore file.
-
 ##  browsersync cacheing issue
   Problem: If you add or subtract files, browsersync won't see them.
   Solution: stop browsersync then restart browsersync and make sure the files are added

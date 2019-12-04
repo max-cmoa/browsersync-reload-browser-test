@@ -3,6 +3,8 @@
  <head>
 
   <!-- use css and javascript enqueued in functions.php -->
+  <!-- Open the console > stylesheets > main.css -->
+  <!-- You will see css WordPress also enqueues by default -->
   <?php wp_head(); ?>
 
  </head>
