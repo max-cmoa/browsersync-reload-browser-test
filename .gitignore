@@ -1,12 +1,14 @@
 # Files to not commit to Github
-# to remove folders already commited that should not be committed like
-# node_modules, simple run $ git rm -r --cached .
-# then $ git add --all
-# then $ git commit -m ".gitignore is now working"
+# to remove folders already commited in Github that should not be committed run
+# $ git rm -r --cached .
+# $ git add --all
+# $ git commit -m ".gitignore is now working"
+# $ git push origin master
 
 # ignore the Mac file that stores meta-data about file location in a folder
 .DS_Store
 # ignore node_modules directory due to the fact they take up a large amount of space
 node_modules
-# ignore production directory
+# ignore production directory, which contains gulped files to be placed on the server
+# that displays your website
 production
