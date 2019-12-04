@@ -21,11 +21,12 @@
 @import "partials/layouts/header";
 @import "partials/layouts/navigation";
 @import "partials/layouts/section";
+@import "partials/layouts/typography";
 
-// include all base sass
-@import "partials/base/buttons";
-@import "partials/base/forms";
-@import "partials/base/lists";
-@import "partials/base/logo";
-@import "partials/base/paragraphs";
-@import "partials/base/typography";
+// include all elements sass
+@import "partials/elements/buttons";
+@import "partials/elements/forms";
+@import "partials/elements/lists";
+@import "partials/elements/logo";
+@import "partials/elements/paragraphs";
+@import "partials/elements/tables";
