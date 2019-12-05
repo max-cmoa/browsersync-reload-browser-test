@@ -25,10 +25,13 @@ Download or $ git clone thisRepo to your computer. Then place this theme in the 
       To do a build without using browsersync.
       $ gulp
 
+      To compile sass
+      $ gulp sassTask
+
       To use browsersync to watch files and reload when changes are detected. Note: you don't have to use Local By Flywheel. Proxy will be either your localhost or your websigte name in Local by Flywheel.
       1. Open **gulpfile.js/tasks/browserSync.js** and change the proxy to the proper proxy.
       2. $ gulp watch
-      
+
 # Reference
   * See the <ins>[browsersync documentation](https://www.browsersync.io/docs/api#api-init)</ins>.
      * Problem: If you add or subtract files, browsersync won't see them.
@@ -38,17 +41,17 @@ Download or $ git clone thisRepo to your computer. Then place this theme in the 
   * See the information <ins>[about npm, package.json, and package-lock.json](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)</ins>
   * See the information about <ins>[node version manager **nvm**](https://www.keycdn.com/blog/node-version-manager)</ins>.
   * See the <ins>[gulpjs documentation](https://gulpjs.com/docs/en/getting-started/quick-start)</ins>.
-  * See the <ins>[Sass documentation](https://sass-lang.com/guide)</ins>, and please note this project uses .scss sass syntax because it is easier to use. 
+  * See the <ins>[Sass documentation](https://sass-lang.com/guide)</ins>, and please note this project uses .scss sass syntax because it is easier to use.
    * Read about <ins>[.scss sass syntax](https://sass-lang.com/documentation/syntax)</ins>.
 
 # Directories and Files explained
-  
+
   * **.git directory** contains metadata if you are connected to a remote repository like github. (This is hidden by default)
-  
+
   * **assets directory** contain fonts, icons, images, javascript files, and sass files.
 
   * **node_modules directory** (not commited because of .gitignore), contains files installed when $ npm install is ran.
-  
+
   * **production directory** contains files output from running $ gulp or $ gulp taskName
 
   * **gulpfile.js directory** contains abstracted gulp tasks for making the production version of this theme.
@@ -70,7 +73,7 @@ Download or $ git clone thisRepo to your computer. Then place this theme in the 
   * **.gitignore file** contains directories and files that will not be commited/saved to Github.
 
   * **functions.php file** contains functions for WordPress to enqueue main.css and main.js files.
-  
+
   * **index.php file** is a fallback template that WordPress will use if no other appropriate template is found. The idea of this project is not to rely on the confusing <ins>[hell that is the WordPress template hierarchy](https://wphierarchy.com)</ins>. Rather you can create your own template files in the template directory to organize your files.
 
   * **package-lock.json file** automatically created by package.json.
