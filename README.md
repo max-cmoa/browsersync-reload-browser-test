@@ -8,6 +8,8 @@
 
 If you don't have a developers environment, I would consider reading this <ins>[atom.io setup gist](https://gist.github.com/max-cmoa/a16bf224d1b6672bea030e7196d26a22)</ins>.
 
+If you want an easy way to run WordPress, read this gist on <ins>[Local By Flywheel setup](https://gist.github.com/max-cmoa/16057cde0c9b87ff900e4b2eb8faafe3)</ins>.
+
 Make sure you have installed <ins>[node js](https://nodejs.org/en/download/)</ins>, <ins>[node package manager aka npm](https://docs.npmjs.com/cli/install)</ins> and the <ins>[node version manager aka nvm](https://github.com/nvm-sh/nvm/blob/master/README.md)</ins>.
 
 Download or $ git clone thisRepo to your computer. Then place this theme in the **wp-content/themes directory**
