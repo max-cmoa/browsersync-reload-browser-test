@@ -1,21 +1,23 @@
 /* we use .scss instead of .sass due to .scss having the easier syntax to use
    this file is used to include various sass files
-   the purpose of having these sass partials is for modular design
+   the purpose of having these sass partials is for modular design.
 
    If you plan to add a partial file be sure to include an underscore
-   and add @import "partials/directoryName/_yourFileName.scss"; to this file.
+   and add @import "partials/directoryName/_yourFileName.scss"; to this
+   main.scss file.
+
    Also if you are using browsersync, make sure your changes are applied.
    You may need to restart browsersync
 */
 
 // include all utility sass, which should come first
+@import "partials/utility/animations";
 @import "partials/utility/fonts";
 @import "partials/utility/grid-settings";
 @import "partials/utility/mixins";
 @import "partials/utility/variables";
 
 // include all layout sass
-@import "partials/layouts/body";
 @import "partials/layouts/content";
 @import "partials/layouts/footer";
 @import "partials/layouts/header";
@@ -24,9 +26,22 @@
 @import "partials/layouts/typography";
 
 // include all elements sass
+@import "partials/elements/anchors";
+@import "partials/elements/blockquotes";
+@import "partials/elements/body";
 @import "partials/elements/buttons";
+@import "partials/elements/divs";
 @import "partials/elements/forms";
-@import "partials/elements/lists";
-@import "partials/elements/logo";
+@import "partials/elements/headings";
+@import "partials/elements/iframes";
+@import "partials/elements/images";
+@import "partials/elements/inputs";
+@import "partials/elements/labels";
+@import "partials/elements/logos";
+@import "partials/elements/options";
+@import "partials/elements/orderedlists";
 @import "partials/elements/paragraphs";
+@import "partials/elements/quotes";
 @import "partials/elements/tables";
+@import "partials/elements/textareas";
+@import "partials/elements/unorderedlists";
