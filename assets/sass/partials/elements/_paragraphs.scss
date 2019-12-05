@@ -2,11 +2,10 @@
 
 .standardParagraph {
 
-  // for devices larger than
-  @media screen and (min-device-width: 416px) {
-    font-size: 40px;
-    color: black;
-  }
+  // css for screens larger than mobile devices
+  color: black;
+  font-size:40px;
+
 
   // for mobile devices smaller than
   @media only screen and (max-device-width: 415px) {
