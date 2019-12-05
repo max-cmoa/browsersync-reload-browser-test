@@ -27,6 +27,8 @@ Download or $ git clone thisRepo to your computer. Then place this theme in the 
 
       To compile sass
       $ gulp sassTask
+      Or run normal gulp which will run other defaut tasks
+      $ gulp
 
       To use browsersync to watch files and reload when changes are detected. Note: you don't have to use Local By Flywheel. Proxy will be either your localhost or your websigte name in Local by Flywheel.
       1. Open **gulpfile.js/tasks/browserSync.js** and change the proxy to the proper proxy.
