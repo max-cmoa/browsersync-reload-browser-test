@@ -10,6 +10,8 @@ If you don't have a developers environment, I would consider reading this <ins>[
 
 Make sure you have installed <ins>[node js](https://nodejs.org/en/download/)</ins>, <ins>[node package manager aka npm](https://docs.npmjs.com/cli/install)</ins> and the <ins>[node version manager aka nvm](https://github.com/nvm-sh/nvm/blob/master/README.md)</ins>.
 
+Download or $ git clone thisRepo to your computer. Then place this theme in the **wp-content/themes directory**
+
       $ cd to-this-directory
       $ npm install
 
@@ -23,8 +25,8 @@ Make sure you have installed <ins>[node js](https://nodejs.org/en/download/)</in
       To do a build without using browsersync.
       $ gulp
 
-      To use browsersync to watch files and reload when changes are detected. Proxy will be either your localhost or your Local by Flywheel localhost. 
-      1. Open **gulpfile.js/tasks/browserSync.js** and change the proxy to your proper proxy.
+      To use browsersync to watch files and reload when changes are detected. Note: you don't have to use Local By Flywheel. Proxy will be either your localhost or your websigte name in Local by Flywheel.
+      1. Open **gulpfile.js/tasks/browserSync.js** and change the proxy to the proper proxy.
       2. $ gulp watch
       
 # Reference
