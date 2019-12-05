@@ -8,6 +8,7 @@ var browserSync = require('browser-sync').create();
 // browserSync watch for changes
 var browserSyncWatch = function () {
   browserSync.init({
+    browser: ["google chrome", "safari"],
     proxy: "wordpress.local", // change this to your websiteName.local or ipv4
     notify: false,
   },)
