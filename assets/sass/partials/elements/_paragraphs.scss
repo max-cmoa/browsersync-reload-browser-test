@@ -1,5 +1,17 @@
 // sass for paragraphs
 
 .standardParagraph {
-  font-size: 24px;
+
+  // for browsers larger than
+  @media screen and (min-width: 416px) {
+    font-size: 40px;
+    color: black;
+  }
+
+  // for mobile devices smaller than
+  @media only screen and (max-width: 415px) {
+    color: red;
+    font-size:20px;
+  }
+
 }
