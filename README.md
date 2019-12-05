@@ -1,23 +1,26 @@
 # simple-starter-theme
 
-  A starter theme to teach how abstractions and modular design can help making websites and maintenance easier. This project attempts to show how easy it is to use node, npm, sass (.scss), and gulp when developing a theme. Follow the steps in order to get started. If you don't have a developers environment, I would consider reading this <ins>[atom.io setup gist](https://gist.github.com/max-cmoa/a16bf224d1b6672bea030e7196d26a22)</ins>.
+  A starter theme to teach how abstractions and modular design can help making websites and maintenance easier. This code repository attempts to show begineers how to use node, npm, sass using **.scss** syntax, and gulp when developing a theme. Follow the steps one by one.
 
   Always remember these words: **Make one change/save at a time, and reload your browser to see if your change worked**.
 
 # Starting
 
-Make sure you have installed <ins>[node](https://nodejs.org/en/download/)</ins>, <ins>[npm](https://docs.npmjs.com/cli/install)</ins> and <ins>[nvm](https://github.com/nvm-sh/nvm/blob/master/README.md)</ins>.
+If you don't have a developers environment, I would consider reading this <ins>[atom.io setup gist](https://gist.github.com/max-cmoa/a16bf224d1b6672bea030e7196d26a22)</ins>.
+
+Make sure you have installed <ins>[node js](https://nodejs.org/en/download/)</ins>, <ins>[node package manager aka npm](https://docs.npmjs.com/cli/install)</ins> and the <ins>[node version manager aka nvm](https://github.com/nvm-sh/nvm/blob/master/README.md)</ins>.
 
       $ cd to-this-directory
       $ npm install
 
-      If a npm package install fails, find the issue and you may need install <ins>[nvm](https://github.com/nvm-sh/nvm/blob/master/README.md)</ins>
+      If a npm install fails, please report the issue here. Sometimes packages require an older version of node js and installing <ins>[nvm](https://github.com/nvm-sh/nvm/blob/master/README.md)</ins> to use an older version of node to run npm install again maybe the solution.
+
       $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 
-      See all gulp tasks.
+      gulp is used to take everything and process **build** the theme files for your WordPress website. To see all gulp tasks, type the following in a terminal and press [enter].
       $ gulp --tasks
 
-      To do a normal build without using browsersync.
+      To do a build without using browsersync.
       $ gulp
 
       To use browsersync to watch files and reload when changes are detected. Proxy will be either your localhost or your Local by Flywheel localhost. 
@@ -37,9 +40,18 @@ Make sure you have installed <ins>[node](https://nodejs.org/en/download/)</ins>,
    * Read about <ins>[.scss sass syntax](https://sass-lang.com/documentation/syntax)</ins>.
 
 # Directories and Files explained
+  
+  * **.git directory** contains metadata if you are connected to a remote repository like github. (This is hidden by default)
+  
   * **assets directory** contain fonts, icons, images, javascript files, and sass files.
 
+  * **node_modules directory** (not commited because of .gitignore), contains files installed when $ npm install is ran.
+  
+  * **production directory** contains files output from running $ gulp or $ gulp taskName
+
   * **gulpfile.js directory** contains abstracted gulp tasks for making the production version of this theme.
+     **tasks** contains files which each handle a task for a related file or directory.
+    **index.js** is used to require all of the tasks in the tasks directory
 
   * **templates directory** contains php template files.
       **pages directory** for WordPress pages.
@@ -56,10 +68,12 @@ Make sure you have installed <ins>[node](https://nodejs.org/en/download/)</ins>,
   * **.gitignore file** contains directories and files that will not be commited/saved to Github.
 
   * **functions.php file** contains functions for WordPress to enqueue main.css and main.js files.
-
-  * **package.json file** contains json for npm packages required for sass and gulp to work.
+  
+  * **index.php file** is a fallback template that WordPress will use if no other appropriate template is found. The idea of this project is not to rely on the confusing <ins>[hell that is the WordPress template hierarchy](https://wphierarchy.com)</ins>. Rather you can create your own template files in the template directory to organize your files.
 
   * **package-lock.json file** automatically created by package.json.
+
+  * **package.json file** contains json for npm packages required for sass and gulp to work.
 
   * **README.md file** contains useful information about the project.
 
