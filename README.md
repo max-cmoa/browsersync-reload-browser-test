@@ -2,7 +2,7 @@
 
   A starter theme to teach how abstractions can make programming and maintenance easier. This project uses <ins>[.scss files with Sass syntax](https://sass-lang.com/documentation/syntax)</ins> to make css modular. Gulp has been abstracted to easily modify or add new gulp tasks.
 
-  Always remember these words: **Make one change at a time, save your change, reload your browser, and see if you change worked**.
+  Always remember these words: **Make one change/save at a time, and reload your browser to see if your change worked**.
 
 # Starting
 
@@ -26,7 +26,7 @@
 
   * **gulpfile.js directory** contains abstracted gulp tasks for making the production version of this theme.
 
-  * **templates directory*8 contains php template files
+  * **templates directory** contains php template files
       **pages directory** for WordPress pages
 
       **partials directory** for partials to be included on multiple pages or posts
