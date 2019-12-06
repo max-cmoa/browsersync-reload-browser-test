@@ -2,8 +2,9 @@
 /*
     Template Name: home-page
 
-    This is a Custom Page Type. The above
-    comment about template name is what is shown in
+    This is a Custom Page Type.
+    DO NOT PREFIX THE FILENAME USING page-
+    The above comment about template name is what is shown in
     /wp-admin > dashboard > Pages > Page Attributes >
     Template > select home-page from drop down.
 
