@@ -1,29 +1,27 @@
 # simple-starter-theme
 
-  A starter theme to teach how abstractions and modular design can help making websites and maintenance easier. This code repository attempts to show beginners how to use node, npm, sass using **.scss** syntax, and gulp when developing a theme. Follow the steps one by one.
+  A starter theme for beginners to build upon.
 
-  Always remember these words: **Make one change/save at a time, and reload your browser to see if your change worked**.
+  Remember these words: **Make one change/save at a time, and reload your browser to see if your change worked**.
 
 # Starting
 
-The files **index.php** and **style.css** are required in a WordPress theme.
-
 If you don't have a developers environment, I would consider reading this <ins>[atom.io setup gist](https://gist.github.com/max-cmoa/a16bf224d1b6672bea030e7196d26a22)</ins>.
 
-If you want an easy way to run WordPress, read this gist on <ins>[Local By Flywheel setup](https://gist.github.com/max-cmoa/16057cde0c9b87ff900e4b2eb8faafe3)</ins>.
+If you want an easy way to run WordPress, I suggest Local By Flywheel. Please see this <ins>[Local By Flywheel setup](https://gist.github.com/max-cmoa/16057cde0c9b87ff900e4b2eb8faafe3)</ins>.
 
-Make sure you have installed <ins>[node js](https://nodejs.org/en/download/)</ins>, <ins>[node package manager aka npm](https://docs.npmjs.com/cli/install)</ins> and the <ins>[node version manager aka nvm](https://github.com/nvm-sh/nvm/blob/master/README.md)</ins>.
+Please install <ins>[node js](https://nodejs.org/en/download/)</ins>, <ins>[node package manager aka npm](https://docs.npmjs.com/cli/install)</ins> and <ins>[node version manager aka nvm](https://github.com/nvm-sh/nvm/blob/master/README.md)</ins>.
 
-Download or $ git clone thisRepo to your computer. Then place this theme in the **wp-content/themes directory**
+Download or $ git clone uri-for-simple-starter-theme to your computer. Then place this theme in the **/wp-content/themes** directory
 
       $ cd to-this-directory
       $ npm install
 
       If a npm install fails, please report the issue here. Sometimes packages require an older version of node js and installing <ins>[nvm](https://github.com/nvm-sh/nvm/blob/master/README.md)</ins> to use an older version of node to run npm install again maybe the solution.
 
-      $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+      gulp is used to take all files and prepare them for your live website, also known as a **build**.
 
-      gulp is used to take everything and process **build** the theme files for your WordPress website. To see all gulp tasks, type the following in a terminal and press [enter].
+      To see all gulp tasks, run
       $ gulp --tasks
 
       To do a build without using browsersync.
@@ -31,7 +29,7 @@ Download or $ git clone thisRepo to your computer. Then place this theme in the 
 
       To compile sass
       $ gulp sassTask
-      Or run normal gulp which will run other defaut tasks
+      Or run normal gulp which will run other default tasks
       $ gulp
 
       To use browsersync to watch files and reload when changes are detected. Note: you don't have to use Local By Flywheel. Proxy will be either your localhost or your websigte name in Local by Flywheel.
