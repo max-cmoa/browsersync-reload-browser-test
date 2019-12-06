@@ -1,8 +1,8 @@
 <?php
 
 /*
-   This files functionality is to make
-   css and javascript files accessible to this theme.
+   The theme functions.php file makes
+   css and javascript files available to this theme.
 */
 
 // Add Theme Support

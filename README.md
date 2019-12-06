@@ -1,8 +1,6 @@
 # simple-starter-theme
 
-  A starter theme for beginners to build upon.
-
-  If you ever get stuck, **Googling it!**
+  A starter theme for beginners. This theme separates all templates into their own folders for organizational purposes. If you want to add a template, it is recommended that you add your template to the appropriate template directory.
 
   Remember these words: **Make one change/save at a time, and reload your browser to see if your change worked**.
 
@@ -75,7 +73,7 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
 
   * **.gitignore file** contains directories and files that will not be commited/saved to Github.
 
-  * **functions.php file** contains functions for WordPress to enqueue main.css and main.js files.
+  * **functions.php file (semi-required to use css and js for theme functionality)** contains functions for WordPress to use **enqueue** the main.css and main.js files. This file is also known as the theme functions file and is a template used by WordPress themes.
 
   * **index.php file (required file)** is a fallback template required in the root directory of every theme for a theme to be valid. WordPress will use index.php if no other appropriate template is found. The idea of this project is not to rely on the confusing <ins>[hell that is the WordPress template rendering hierarchy](https://wphierarchy.com)</ins>. Rather you should create your own template files in the appropriate template directory to organize your file hierarchy. Hunting for a file is hard enough, so you should never have templates outside of the template directory.
 
