@@ -1,6 +1,6 @@
 # simple-starter-theme
 
-  A starter theme for beginners to build upon.
+  A starter theme for beginners to build upon. If you ever get stuck, **Google it**
 
   Remember these words: **Make one change/save at a time, and reload your browser to see if your change worked**.
 
@@ -37,6 +37,7 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
       2. $ gulp watch
 
 # Reference
+  * See the <ins>[WordPress Theme Handbook](https://developer.wordpress.org/themes/getting-started/)</ins>
   * See the <ins>[browsersync documentation](https://www.browsersync.io/docs/api#api-init)</ins>.
      * Problem: If you add or subtract files, browsersync won't see them.
      * Solution: stop browsersync then restart browsersync and make sure the files are added.
