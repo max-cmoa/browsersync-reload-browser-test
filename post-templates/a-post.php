@@ -1,6 +1,6 @@
 <?php
 /*
-  Template Name: zebra-post
+  Template Name: a-post
   Template Post Type: post
 
   This is a Custom Post Type.
