@@ -14,6 +14,8 @@
 
  ?>
 
+ <h1>On the zebra-post.php post template</h1>
+
  <?php if( have_posts() ) : ?>
    <?php while (have_posts() ) : ?>
      <?php the_post(); ?>
