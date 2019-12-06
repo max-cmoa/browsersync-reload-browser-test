@@ -1,6 +1,8 @@
 # simple-starter-theme
 
-  A starter theme for beginners to build upon. If you ever get stuck, **Google it**
+  A starter theme for beginners to build upon.
+
+  If you ever get stuck, **Googling it!**
 
   Remember these words: **Make one change/save at a time, and reload your browser to see if your change worked**.
 
@@ -53,24 +55,21 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
 
   * **templates directory** contains php template files.
 
-      **templates/pages directory** for WordPress pages.
+  Important note, don't rely on implicit WordPress Template Hierarchy, always use custom page or post templates
 
-      **partials directory** for partials to be included on multiple pages or posts.
-        **footers directory** contains footer partials
+      **templates/pages directory** for custom WordPress pages.
+
+      **templates/posts directory** for custom WordPress posts.
+
+      **templates/partials directory** for partials to be included on multiple pages or posts.
+        **templates/partials/footers directory** contains footer partials
           **main-footer.php** contains code for footer of website
 
-        **headers directory** contains header partials
+        **templates/partials/headers directory** contains header partials
           **main-header.php** contains code for header of website
 
-        **navigations directory** contains navigation partials
+        **template/partials/navigations directory** contains navigation partials
           **main-navigation.php** contains code for navigation of website
-
-      **posts directory** for WordPress posts.
-        **footers directory** for html footers.
-
-       **headers directory** for html headers like metadata and site information.
-
-       **navigations directory** for html navigation.
 
   * **.gitignore file** contains directories and files that will not be commited/saved to Github.
 
