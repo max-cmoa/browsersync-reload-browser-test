@@ -2,22 +2,25 @@
 /*
     Template Name: home-page
 
-    This is a custom page type that one should select to use for
-    their page in the WordPress dashboard when creating a page
+    This is a Custom Page Type. The above
+    comment about template name is what is shown in
+    /wp-admin > dashboard > Pages > Page Attributes >
+    Template > select home-page from drop down.
+
 */
-  get_template_part('partial-templates/headers/main-header');
 
-  if( have_posts() ) {
+   get_template_part('../partial-templates/headers/main-header');
 
-    while( have_posts() ) {
-      the_post();
-      the_content();
-    }
+?>
 
-  } else {
-    echo ('No page content to display');
-  }
+  <?php if( have_posts() ) : ?>
+    <?php while (have_posts() ) : ?>
+      <?php the_post(); ?>
+      <h1 class='standardParagraph'><?php the_content(); ?></h1>
+    <?php endwhile; else : ?>
+      <?php echo('No page content to display'); ?>
+    <?php endif; ?>
 
-  get_template_part('partial-templates/footers/main-footer');
-
+<?php
+     get_template_part('../partial-templates/footers/main-footer');
 ?>
