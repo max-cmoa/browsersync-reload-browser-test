@@ -1,6 +1,6 @@
 <!-- get the file main-header.php from templates/partials/headers/ -->
 <!-- if this rendered, then you will see the css applied -->
-<?php get_template_part('templates/partials/headers/main-header'); ?>
+<?php get_template_part('partial-templates/headers/main-header'); ?>
   <body>
 
    <h1 class='standardHeadingOne'>Welcome to the simple-starter-theme</h1>
@@ -12,4 +12,4 @@
   </body>
 <!-- get the file main-footer.php from templates/partials/headers/ -->
 <!-- be sure to look in the developer console to see the javascript output -->
-<?php get_template_part('templates/partials/footers/main-footer'); ?>
+<?php get_template_part('partial-templates/footers/main-footer'); ?>
