@@ -36,19 +36,6 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
       1. Open **gulpfile.js/tasks/browserSync.js** and change the proxy to the proper proxy.
       2. $ gulp watch
 
-# Reference
-  * See the <ins>[WordPress Theme Handbook](https://developer.wordpress.org/themes/getting-started/)</ins>
-  * See the <ins>[browsersync documentation](https://www.browsersync.io/docs/api#api-init)</ins>.
-     * Problem: If you add or subtract files, browsersync won't see them.
-     * Solution: stop browsersync then restart browsersync and make sure the files are added.
-  * See the <ins>[information about .gitignore file](https://help.github.com/en/github/using-git/ignoring-files)</ins>
-  * See the information <ins>[about node](https://www.w3schools.com/nodejs/)</ins>
-  * See the information <ins>[about npm, package.json, and package-lock.json](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)</ins>
-  * See the information about <ins>[node version manager **nvm**](https://www.keycdn.com/blog/node-version-manager)</ins>.
-  * See the <ins>[gulpjs documentation](https://gulpjs.com/docs/en/getting-started/quick-start)</ins>.
-  * See the <ins>[Sass documentation](https://sass-lang.com/guide)</ins>, and please note this project uses .scss sass syntax because it is easier to use.
-   * Read about <ins>[.scss sass syntax](https://sass-lang.com/documentation/syntax)</ins>.
-
 # Directories and Files explained
 
   * **.git directory** contains metadata if you are connected to a remote repository like github. (This is hidden by default)
@@ -60,11 +47,13 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
   * **production directory** contains files output from running $ gulp or $ gulp taskName
 
   * **gulpfile.js directory** contains abstracted gulp tasks for making the production version of this theme.
-     **tasks** contains files which each handle a task for a related file or directory.
-    **index.js** is used to require all of the tasks in the tasks directory
+
+     **gulpfile.js/tasks** contains files which each handle a task for a related file or directory.
+    **gulpfile.js/index.js** is used to require all of the tasks in the tasks directory
 
   * **templates directory** contains php template files.
-      **pages directory** for WordPress pages.
+
+      **templates/pages directory** for WordPress pages.
 
       **partials directory** for partials to be included on multiple pages or posts.
 
@@ -79,7 +68,7 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
 
   * **functions.php file** contains functions for WordPress to enqueue main.css and main.js files.
 
-  * **index.php file (required file)** is a fallback template that WordPress will use if no other appropriate template is found. The idea of this project is not to rely on the confusing <ins>[hell that is the WordPress template hierarchy](https://wphierarchy.com)</ins>. Rather you can create your own template files in the template directory to organize your files.
+  * **index.php file (required file)** is a fallback template required in the root directory of the theme. WordPress will use index.php if no other appropriate template is found. The idea of this project is not to rely on the confusing <ins>[hell that is the WordPress template rendering hierarchy](https://wphierarchy.com)</ins>. Rather you should create your own template files in the appropriate template directory to organize your file hierarchy. Hunting for a file is hard enough, so you should never have templates outside of the template directory.
 
   * **package-lock.json file** automatically created by package.json.
 
@@ -90,3 +79,16 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
   * **screenshot.png image** is an image that is displayed for this theme in the dashboard /wp-admin themes section. Learn more about <ins>[screenshot requirements](https://wpism.com/wordpress-theme-screenshot/)</ins>.
 
   * **styles.css (required file)** contains metadata for information about this theme and is displayed in the dashboard /wp-admin themes section.
+
+# Reference
+  * See the <ins>[WordPress Theme Handbook](https://developer.wordpress.org/themes/getting-started/)</ins>
+  * See the <ins>[browsersync documentation](https://www.browsersync.io/docs/api#api-init)</ins>.
+      * Problem: If you add or subtract files, browsersync won't see them.
+      * Solution: stop browsersync then restart browsersync and make sure the files are added.
+  * See the <ins>[information about .gitignore file](https://help.github.com/en/github/using-git/ignoring-files)</ins>
+  * See the information <ins>[about node](https://www.w3schools.com/nodejs/)</ins>
+  * See the information <ins>[about npm, package.json, and package-lock.json](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)</ins>
+  * See the information about <ins>[node version manager **nvm**](https://www.keycdn.com/blog/node-version-manager)</ins>.
+  * See the <ins>[gulpjs documentation](https://gulpjs.com/docs/en/getting-started/quick-start)</ins>.
+  * See the <ins>[Sass documentation](https://sass-lang.com/guide)</ins>, and please note this project uses .scss sass syntax because it is easier to use.
+    * Read about <ins>[.scss sass syntax](https://sass-lang.com/documentation/syntax)</ins>.

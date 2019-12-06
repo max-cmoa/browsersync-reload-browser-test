@@ -1,8 +1,8 @@
 <?php
 
 /*
-   Used to make files more modular. This files functionality
-   is to make the sass and javascript accessible to this theme.
+   This files functionality is to make
+   css and javascript files accessible to this theme.
 */
 
 // Add Theme Support

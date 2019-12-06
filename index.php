@@ -15,8 +15,9 @@
 
    <h1 class='standardHeadingOne'>Welcome to the simple-starter-theme</h1>
 
-   <p class='standardParagraph'>Please explore the files in the simple-starter-theme directory.
-   Make sure that you are either using browsersync or you run $ gulp when you change any sass</p>
+   <p class='standardParagraph'>Using index.php fallback template.
+   You should not use index.php, you should use the appropriate template
+ file for a given post or page.</p>
 
   </body>
   <footer>
