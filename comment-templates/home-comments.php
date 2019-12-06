@@ -23,5 +23,3 @@
 <?php endif; ?>
 
 <?php endif; // have_comments() ?>
-
-<?php comment_form('../comment-templates/home-comments.php'); ?>

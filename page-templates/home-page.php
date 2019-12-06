@@ -16,6 +16,7 @@
 
   <h1>On the home-page.php page template</h1>
 
+  <!-- display the page content, if any -->
   <?php if( have_posts() ) : ?>
     <?php while (have_posts() ) : ?>
       <?php the_post(); ?>
@@ -24,8 +25,10 @@
       <?php echo('No page content to display'); ?>
     <?php endif; ?>
 
-<!-- show comments, uses comments.php file -->
-<?php comments_template(); ?>
+<?php
+      // display the comments
+      comments_template('../comment-templates/home-comments.php'); 
+ ?>
 
 <?php
      get_template_part('../partial-templates/footers/main-footer');
