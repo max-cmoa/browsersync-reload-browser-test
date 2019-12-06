@@ -50,25 +50,21 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
 
   * **gulpfile.js directory** contains abstracted gulp tasks for making the production version of this theme.
 
-     **gulpfile.js/tasks** contains files which each handle a task for a related file or directory.
-    **gulpfile.js/index.js** is used to require all of the tasks in the tasks directory
+        **gulpfile.js/tasks** contains files which each handle a task for a related file or directory.
+      **gulpfile.js/index.js** is used to require all of the tasks in the tasks directory
 
-  * **templates directory** contains php template files.
+  *  **page-templates directory** contains custom page templates
 
-  Important note, don't rely on implicit WordPress Template Hierarchy, always use custom page or post templates
+  *  **post-templates directory** contains custom post templates
 
-      **templates/pages directory** for custom WordPress pages.
-
-      **templates/posts directory** for custom WordPress posts.
-
-      **templates/partials directory** for partials to be included on multiple pages or posts.
-        **templates/partials/footers directory** contains footer partials
+    **partial-templates directory** for partials to be included on multiple pages or posts.
+        **partial-templates/footers directory** contains footer partials
           **main-footer.php** contains code for footer of website
 
-        **templates/partials/headers directory** contains header partials
+        **partial-templates/headers directory** contains header partials
           **main-header.php** contains code for header of website
 
-        **template/partials/navigations directory** contains navigation partials
+        **partial-templates/navigations directory** contains navigation partials
           **main-navigation.php** contains code for navigation of website
 
   * **.gitignore file** contains directories and files that will not be commited/saved to Github.
