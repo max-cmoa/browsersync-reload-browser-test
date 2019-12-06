@@ -50,12 +50,13 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
 
   * **gulpfile.js directory** contains abstracted gulp tasks for making the production version of this theme.
 
-        **gulpfile.js/tasks** contains files which each handle a task for a related file or directory.
-      **gulpfile.js/index.js** is used to require all of the tasks in the tasks directory
+      **gulpfile.js/tasks** contains files which each handle a task for a related file or directory.
+     **gulpfile.js/index.js** is used to require all of the tasks in the tasks directory
 
-  *  **page-templates directory** contains custom page templates
+  *  **page-templates directory** contains custom page templates to give a different look and feel for a page. Always choose one from the Page editor found in **/wp-admin > dashboard > Pages > Page Attributes >
+  Template > select home-page from drop down**.
 
-  *  **post-templates directory** contains custom post templates
+  *  **post-templates directory** contains custom post templates to give a different look and feel for a post **/wp-admin > dashboard > Posts > Post Attributes > Template > select zebra from drop down.**.
 
     **partial-templates directory** for partials to be included on multiple pages or posts.
         **partial-templates/footers directory** contains footer partials
