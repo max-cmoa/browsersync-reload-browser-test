@@ -68,7 +68,7 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
 
   * **functions.php file** contains functions for WordPress to enqueue main.css and main.js files.
 
-  * **index.php file (required file)** is a fallback template required in the root directory of the theme. WordPress will use index.php if no other appropriate template is found. The idea of this project is not to rely on the confusing <ins>[hell that is the WordPress template rendering hierarchy](https://wphierarchy.com)</ins>. Rather you should create your own template files in the appropriate template directory to organize your file hierarchy. Hunting for a file is hard enough, so you should never have templates outside of the template directory.
+  * **index.php file (required file)** is a fallback template required in the root directory of every theme for a theme to be valid. WordPress will use index.php if no other appropriate template is found. The idea of this project is not to rely on the confusing <ins>[hell that is the WordPress template rendering hierarchy](https://wphierarchy.com)</ins>. Rather you should create your own template files in the appropriate template directory to organize your file hierarchy. Hunting for a file is hard enough, so you should never have templates outside of the template directory.
 
   * **package-lock.json file** automatically created by package.json.
 
