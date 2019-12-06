@@ -56,6 +56,14 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
       **templates/pages directory** for WordPress pages.
 
       **partials directory** for partials to be included on multiple pages or posts.
+        **footers directory** contains footer partials
+          **main-footer.php** contains code for footer of website
+
+        **headers directory** contains header partials
+          **main-header.php** contains code for header of website
+
+        **navigations directory** contains navigation partials
+          **main-navigation.php** contains code for navigation of website
 
       **posts directory** for WordPress posts.
         **footers directory** for html footers.
