@@ -24,6 +24,9 @@
       <?php echo('No page content to display'); ?>
     <?php endif; ?>
 
+<!-- show comments, uses comments.php file -->
+<?php comments_template(); ?>
+
 <?php
      get_template_part('../partial-templates/footers/main-footer');
 ?>
