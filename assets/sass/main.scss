@@ -1,5 +1,5 @@
-/* we use .scss instead of .sass due to .scss having the easier syntax to use
-   this file is used to include various sass files
+/* we @import .scss instead of .sass due to .scss having the easier syntax to @import
+   this file is @importd to include various sass files
    the purpose of having these sass partials is for modular design.
 
    If you plan to add a partial file be sure to include an underscore
