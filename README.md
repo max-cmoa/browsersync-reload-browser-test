@@ -53,6 +53,11 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
       **gulpfile.js/tasks** contains files which each handle a task for a related file or directory.
      **gulpfile.js/index.js** is used to require all of the tasks in the tasks directory
 
+  * **comment-templates directory** contains custom comment templates, which one can use to format how comments are displayed. Uses function
+  get_template_part('../partial-templates/footers/main-footer'); to
+  find the specific comment templates. You don't pick this from the
+  /wp-admin dashboard. This is unlike page-templates and post-templates
+
   *  **page-templates directory** contains custom page templates to give a different look and feel for a page. Always choose one from the Page editor found in **/wp-admin > dashboard > Pages > Page Attributes >
   Template > select home-page from drop down**.
 
