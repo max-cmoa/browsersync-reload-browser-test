@@ -1,10 +1,12 @@
 # simple-starter-theme
 
-  A starter theme to teach how abstractions and modular design can help making websites and maintenance easier. This code repository attempts to show begineers how to use node, npm, sass using **.scss** syntax, and gulp when developing a theme. Follow the steps one by one.
+  A starter theme to teach how abstractions and modular design can help making websites and maintenance easier. This code repository attempts to show beginners how to use node, npm, sass using **.scss** syntax, and gulp when developing a theme. Follow the steps one by one.
 
   Always remember these words: **Make one change/save at a time, and reload your browser to see if your change worked**.
 
 # Starting
+
+The files **index.php** and **style.css** are required in a WordPress theme.
 
 If you don't have a developers environment, I would consider reading this <ins>[atom.io setup gist](https://gist.github.com/max-cmoa/a16bf224d1b6672bea030e7196d26a22)</ins>.
 
@@ -78,7 +80,7 @@ Download or $ git clone thisRepo to your computer. Then place this theme in the 
 
   * **functions.php file** contains functions for WordPress to enqueue main.css and main.js files.
 
-  * **index.php file** is a fallback template that WordPress will use if no other appropriate template is found. The idea of this project is not to rely on the confusing <ins>[hell that is the WordPress template hierarchy](https://wphierarchy.com)</ins>. Rather you can create your own template files in the template directory to organize your files.
+  * **index.php file (required file)** is a fallback template that WordPress will use if no other appropriate template is found. The idea of this project is not to rely on the confusing <ins>[hell that is the WordPress template hierarchy](https://wphierarchy.com)</ins>. Rather you can create your own template files in the template directory to organize your files.
 
   * **package-lock.json file** automatically created by package.json.
 
@@ -88,4 +90,4 @@ Download or $ git clone thisRepo to your computer. Then place this theme in the 
 
   * **screenshot.png image** is an image that is displayed for this theme in the dashboard /wp-admin themes section. Learn more about <ins>[screenshot requirements](https://wpism.com/wordpress-theme-screenshot/)</ins>.
 
-  * **styles.css** contains metadata for information about this theme and is displayed in the dashboard /wp-admin themes section.
+  * **styles.css (required file)** contains metadata for information about this theme and is displayed in the dashboard /wp-admin themes section.
