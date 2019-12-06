@@ -1,6 +1,6 @@
 <?php
 /*
-    Template Name: Home
+    Template Name: home-page
 
     This is a custom page type that one should select to use for
     their page in the WordPress dashboard when creating a page
