@@ -1,6 +1,6 @@
 
-@use "../utility/color-variables";
+@use "../utility/variables";
 
 body {
-  backgroundcolor: color-variables.$body-color;
+  background-color: variables.$body-color;
 }

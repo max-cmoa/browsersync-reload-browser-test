@@ -1,22 +1,7 @@
 
-/*
-
-   we .scss instead of .sass due to .scss having the easier syntax to @use
-   this file is to include various sass files.
-
-   The purpose of having these sass partials is for modular design.
-
-   If you plan to add a partial file be sure to include an underscore
-   and add @use "partials/directoryName/_yourFileName.scss"; to this
-   main.scss file and any files you are using data from a partial.
-
-   Also if you are using browsersync, make sure your changes are applied.
-   You may need to restart browsersync so your changes are applied.
-*/
-
 // include all utility sass, which should come first
 @use "partials/utility/animations";
-@use "partials/utility/colorVariables";
+@use "partials/utility/variables";
 @use "partials/utility/fonts";
 @use "partials/utility/gridSettings";
 @use "partials/utility/mixins";
