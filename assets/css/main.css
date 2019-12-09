@@ -4,7 +4,7 @@
   font-family: Tahoma; }
 
 body {
-  background-color: green; }
+  background-color: white; }
 
 .standardHeadingOne {
   font-size: 24px; }
@@ -16,5 +16,3 @@ body {
     .standardParagraph {
       color: red;
       font-size: 20px; } }
-
-/*# sourceMappingURL=main.css.map */
