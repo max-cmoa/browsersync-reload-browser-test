@@ -5,8 +5,21 @@
 
 var gulp = require('gulp');
 
+/*
 var phpPartialsTask = function() {
-  return gulp.src('templates/partials/*.php')
+  return gulp.src('partial-templates/*.php')
+    .pipe(gulp.dest('production/partial-templates/')); // place php partials
+};
+*/
+
+var phpPartialsTask = function() {
+  return gulp.src(
+                  [
+                    'partial-templates/footers/**/*.php',
+                    'partial-templates/headers/**/*.php',
+                    'partial-templates/navigations/**/*.php',
+                  ], { base: 'src' },
+                )
     .pipe(gulp.dest('production/partial-templates/')); // place php partials
 };
 
