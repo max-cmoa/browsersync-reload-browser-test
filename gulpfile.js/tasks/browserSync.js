@@ -19,6 +19,11 @@ var browsersyncWatchTask = function () {
   // watch all .css files in the styles directory for changes
   gulp.watch('./styles.css').on('change', gulp.series(metaCssTask, browsersync.reload));
 
+  var metaPackageJsonTask = require('./meta-package-json.js');
+
+  // watch the package.json file for any changes
+  gulp.watch('./package.json').on('change', gulp.series(metaPackageJsonTask, browsersync.reload));
+
   // will include methods from css.js
   var metaScreenshotTask = require('./meta-screenshot.js');
 

@@ -8,6 +8,9 @@ var gulp = require('gulp');
 // include methods from meta-css.js
 var metaCssTask = require('./meta-css.js');
 
+// include methods from meta-package.json
+var metaPackageJsonTask = require('./meta-package-json.js');
+
 // include methods from meta-screenshot.js
 var metaScreenshotTask = require('./meta-screenshot.js');
 
@@ -49,6 +52,9 @@ var defaultGulpTask = function () {
 
    // call meta css tasks
    metaCssTask();
+
+   // call meta package.json tasks
+   metaPackageJsonTask();
 
    // call meta screenshot tasks
    metaScreenshotTask();
