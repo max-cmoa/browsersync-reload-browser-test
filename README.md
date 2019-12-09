@@ -2,7 +2,7 @@
 
   An organized starter theme for beginners. This theme separates all templates into their own folders for organizational purposes. If you want to add a template, it is recommended that you add your template to the appropriate directory. This theme uses <ins>[Sass](https://sass-lang.com/)</ins> and <ins>[Gulp](https://gulpjs.com/)</ins> to prepare your theme to be placed on your website.
 
-  PLEASE NOTE **gulp-sass** will not compile .scss to .css due to new syntax.
+  PLEASE NOTE **gulp-sass** will not compile **@use syntax** .scss to .css due to new syntax. Currently we are using **import**. Gulp syntax update is slow, once updated, sass will need to be changed.
   The temporary solution is to use the sass command on command line.
   $ cd assets/sass
   $ sass main.scss ../css/main.css

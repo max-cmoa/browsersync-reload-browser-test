@@ -1,5 +1,4 @@
-@use "../utility/variables";
 
 body {
-  background-color: blue;
+  background-color: $body-color;
 }

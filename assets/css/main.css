@@ -1,33 +1,20 @@
-@use "/partials/utility/animations.scss";
-@use "/partials/utility/variables.scss";
-@use "/partials/utility/_fonts";
-@use "partials/utility/_gridSettings";
-@use "partials/utility/_mixins";
-@use "partials/layouts/_boxModel";
-@use "partials/layouts/_content";
-@use "partials/layouts/_footer";
-@use "partials/layouts/_header";
-@use "partials/layouts/_navigation";
-@use "partials/layouts/_section";
-@use "partials/layouts/_typography";
-@use "partials/elements/_anchors";
-@use "partials/elements/_blockquotes";
-@use "partials/elements/_body";
-@use "partials/elements/_buttons";
-@use "partials/elements/_divs";
-@use "partials/elements/_forms";
-@use "partials/elements/_headings";
-@use "partials/elements/_iframes";
-@use "partials/elements/_images";
-@use "partials/elements/_inputs";
-@use "partials/elements/_labels";
-@use "partials/elements/_logos";
-@use "partials/elements/_options";
-@use "partials/elements/_orderedlists";
-@use "partials/elements/_paragraphs";
-@use "partials/elements/_quotes";
-@use "partials/elements/_tables";
-@use "partials/elements/_textareas";
-@use "partials/elements/_unorderedlists";
+.reusedFont {
+  color: magenta;
+  font-size: 24px;
+  font-family: Tahoma; }
+
+body {
+  background-color: green; }
+
+.standardHeadingOne {
+  font-size: 24px; }
+
+.standardParagraph {
+  color: black;
+  font-size: 40px; }
+  @media only screen and (max-device-width: 415px) {
+    .standardParagraph {
+      color: red;
+      font-size: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
