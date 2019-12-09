@@ -47,7 +47,18 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
 
   * **.git directory** contains metadata if you are connected to a remote repository like github. (This is hidden by default)
 
-  * **assets directory** contain fonts, icons, images, javascript files, and sass files.
+  * **assets directory** contain fonts, icons, images, javascript, and sass files.
+
+      **fonts directory** holds downloaded fonts
+
+      **icons directory** holds icons for WordPress admin purposes
+
+      **images directory** holds image assets for use on your website
+
+      **javascript directory** holds javascript files for theme only!
+
+      **sass directory** holds sassy css and partials. The idea is for css to be modular rather than programming one gigantic css file. In the end, you will compile your Sass into one css file. Think local development with (Sass) vs production (Css).
+      Currently **gulp-sass is broken with the new syntax**.
 
   * **node_modules directory** (not commited because of .gitignore), contains files installed when $ npm install is ran.
 
