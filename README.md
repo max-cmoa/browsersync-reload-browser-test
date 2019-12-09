@@ -6,6 +6,9 @@
   The temporary solution is to use the sass command on command line.
   $ cd assets/sass
   $ sass main.scss ../css/main.css
+  or get sass to watch for changes
+  $ cd assets/sass
+  $ sass --watch main.scss:../css/main.css
 
   For sass to compile to css, you must either run
   $ gulp
