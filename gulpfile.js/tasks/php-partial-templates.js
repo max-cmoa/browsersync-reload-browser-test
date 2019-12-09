@@ -7,7 +7,7 @@ var gulp = require('gulp');
 
 var phpPartialsTask = function() {
   return gulp.src('templates/partials/*.php')
-    .pipe(gulp.dest('production/templates/partials')); // place php partials
+    .pipe(gulp.dest('production/partial-templates/')); // place php partials
 };
 
 gulp.task('phpPartialsTask', phpPartialsTask);

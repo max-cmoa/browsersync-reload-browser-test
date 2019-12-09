@@ -32,14 +32,17 @@ var javascriptTask = require('./javascript.js');
 // include methods from phpFallback.js
 var phpFallbackTask = require('./php-fallback.js');
 
-// include methods from phpPages.js
-var phpPagesTask = require('./php-pages.js')
+// include methods from php-comment-templates.js
+var phpCommentTemplatesTask = require('./php-comment-templates.js');
 
-// include methods from phpPartials.js
-var phpPartialsTask = require('./php-partials.js');
+// include methods from php-page-templates.js
+var phpPageTemplatesTask = require('./php-page-templates.js')
 
-// include methods from phpPosts.js
-var phpPostsTask = require('./php-posts.js');
+// include methods from php-partial-templates.js
+var phpPartialTemplatesTask = require('./php-partial-templates.js');
+
+// include methods from php-post-templates.js
+var phpPostTemplatesTask = require('./php-post-templates.js');
 
 // include methods from browsersync.js
 var browserSyncWatch = require('./browsersync.js');
@@ -77,14 +80,16 @@ var defaultGulpTask = function () {
    // call php fallback task
    phpFallbackTask();
 
+   phpCommentTemplatesTask();
+
    // call php pages task
-   phpPagesTask();
+   phpPageTemplatesTask();
 
    // call php partials task
-   phpPartialsTask();
+   phpPartialTemplatesTask();
 
    // call php posts task
-   phpPostsTask();
+   phpPostTemplatesTask();
 
    // to resolve the promise and tell the gulp task has completed every task
    resolve();

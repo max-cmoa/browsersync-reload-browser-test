@@ -6,7 +6,7 @@ var gulp = require('gulp');
 
 var phpPostsTask = function() {
   return gulp.src('templates/posts/*.php')
-    .pipe(gulp.dest('production/templates/posts')); // place php posts
+    .pipe(gulp.dest('production/post-templates/')); // place php posts
 };
 
 gulp.task('phpPostsTask', phpPostsTask);

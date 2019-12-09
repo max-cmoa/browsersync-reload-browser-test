@@ -60,17 +60,21 @@ var browsersyncWatchTask = function () {
 
   gulp.watch('./index.php').on('change', gulp.series(phpFallbackTask, browsersync.reload));
 
-  var phpPagesTask = require('./php-pages.js');
+  var phpCommentsTask = require('./php-comment-templates.js');
 
-  gulp.watch('templates/pages/*.php').on('change', gulp.series(phpPagesTask, browsersync.reload));
+  gulp.watch('comment-templates/*.php').on('change', gulp.series(phpCommentsTask, browsersync.reload));
 
-  var phpPartialsTask = require('./php-partials.js');
+  var phpPagesTask = require('./php-page-templates.js');
 
-  gulp.watch('templates/partials/**/*.php').on('change', gulp.series(phpPartialsTask, browsersync.reload));
+  gulp.watch('page-templates/*.php').on('change', gulp.series(phpPagesTask, browsersync.reload));
 
-  var phpPostsTask = require('./php-posts.js');
+  var phpPartialsTask = require('./php-partial-templates.js');
 
-  gulp.watch('templates/posts/*.php').on('change', gulp.series(phpPostsTask, browsersync.reload));
+  gulp.watch('partial-templates/*.php').on('change', gulp.series(phpPartialsTask, browsersync.reload));
+
+  var phpPostsTask = require('./php-post-templates.js');
+
+  gulp.watch('post-templates/*.php').on('change', gulp.series(phpPostsTask, browsersync.reload));
 
 } // end of browserSyncWatch function variable
 
