@@ -39,6 +39,10 @@ var browsersyncWatchTask = function () {
 
   gulp.watch('./functions.php').on('change', gulp.series(functionsPhpTask, browsersync.reload));
 
+  var gitignoreTask = require('./gitignore.js');
+
+  gulp.watch('./.gitignore').on('change', gulp.series(gitignoreTask, browsersync.reload));
+
   var imagesTask = require('./images.js');
 
   // watch all images in the images directory for changes

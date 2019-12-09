@@ -12,7 +12,7 @@ var phpPartialsTask = function() {
                     'partial-templates/footers/**/*.php',
                     'partial-templates/headers/**/*.php',
                     'partial-templates/navigations/**/*.php',
-                  ], { base: 'partial-templates' },
+                  ], { base: 'partial-templates' }, // where to start copying from
                 )
     .pipe(gulp.dest('production/partial-templates/')); // place php partials
 };
