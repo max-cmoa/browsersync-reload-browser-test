@@ -14,10 +14,16 @@ var browserSyncWatch = function () {
   },)
 
   // will include methods from css.js
-  var cssTask = require('./css.js');
+  var metaCssTask = require('./meta-css.js');
 
   // watch all .css files in the styles directory for changes
-  gulp.watch('./styles.css').on('change', gulp.series(cssTask, browserSync.reload));
+  gulp.watch('./styles.css').on('change', gulp.series(metaCssTask, browserSync.reload));
+
+  // will include methods from css.js
+  var metaScreenshotTask = require('./meta-screenshot.js');
+
+  // watch all .css files in the styles directory for changes
+  gulp.watch('./screenshot.png').on('change', gulp.series(metaScreenshotTask, browserSync.reload));
 
   // will include methods from fonts.js
   var fontsTask = require('./fonts.js');
@@ -41,19 +47,19 @@ var browserSyncWatch = function () {
   // on any changed javascript files, bundle the javascript then reload the browser
   gulp.watch('assets/javascript/*.js').on('change', gulp.series(javascriptTask, browserSync.reload));
 
-  var phpFallbackTask = require('./phpFallback.js');
+  var phpFallbackTask = require('./php-fallback.js');
 
   gulp.watch('./index.php').on('change', gulp.series(phpFallbackTask, browserSync.reload));
 
-  var phpPagesTask = require('./phpPages.js');
+  var phpPagesTask = require('./php-pages.js');
 
   gulp.watch('templates/pages/*.php').on('change', gulp.series(phpPagesTask, browserSync.reload));
 
-  var phpPartialsTask = require('./phpPartials.js');
+  var phpPartialsTask = require('./php-partials.js');
 
   gulp.watch('templates/partials/**/*.php').on('change', gulp.series(phpPartialsTask, browserSync.reload));
 
-  var phpPostsTask = require('./phpPosts.js');
+  var phpPostsTask = require('./php-posts.js');
 
   gulp.watch('templates/posts/*.php').on('change', gulp.series(phpPostsTask, browserSync.reload));
 

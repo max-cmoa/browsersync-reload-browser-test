@@ -5,8 +5,11 @@
 // required to use gulp object
 var gulp = require('gulp');
 
-// include methods from css.js
+// include methods from meta-css.js
 var metaCssTask = require('./meta-css.js');
+
+// include methods from meta-screenshot.js
+var metaScreenshotTask = require('./meta-screenshot.js');
 
 // include methods from fonts.js
 var fontsTask = require('./fonts.js');
@@ -43,6 +46,9 @@ var defaultGulpTask = function () {
 
    // call meta css tasks
    metaCssTask();
+
+   // call meta screenshot tasks
+   metaScreenshotTask();
 
    // call fonts tasks
    fontsTask();
