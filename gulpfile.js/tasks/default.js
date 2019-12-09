@@ -14,6 +14,9 @@ var metaScreenshotTask = require('./meta-screenshot.js');
 // include methods from fonts.js
 var fontsTask = require('./fonts.js');
 
+// include methods from functions.js
+var functionsPhpTask = require('./functions-php.js');
+
 // include methods from images.js
 var imagesTask = require('./images.js');
 
@@ -52,6 +55,9 @@ var defaultGulpTask = function () {
 
    // call fonts tasks
    fontsTask();
+
+   // call functions tasks
+   functionsPhpTask();
 
    // call images tasks
    imagesTask();
