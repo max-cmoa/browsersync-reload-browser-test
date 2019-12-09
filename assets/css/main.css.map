@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAQA,WAAY;EALV,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,MAAM;;ACHrB,IAAK;EACH,gBAAgB,ECFL,KAAK;;ACDlB,mBAAoB;EAClB,SAAS,EAAE,IAAI;;ACAjB,kBAAmB;EAGjB,KAAK,EAAE,KAAK;EACZ,SAAS,EAAC,IAAI;EAId,gDAAiD;IARnD,kBAAmB;MASf,KAAK,EAAE,GAAG;MACV,SAAS,EAAC,IAAI",
-"sources": ["../sass/partials/utility/_mixins.scss","../sass/partials/elements/_body.scss","../sass/partials/utility/_variables.scss","../sass/partials/elements/_headings.scss","../sass/partials/elements/_paragraphs.scss"],
+"mappings": "AAEA,wCAAwC;AACxC,uCAAuC;AACvC,+BAA+B;AAC/B,qCAAqC;AACrC,+BAA+B;AAG/B,iCAAiC;AACjC,gCAAgC;AAChC,+BAA+B;AAC/B,+BAA+B;AAC/B,mCAAmC;AACnC,gCAAgC;AAChC,mCAAmC;AAGnC,iCAAiC;AACjC,qCAAqC;AACrC,8BAA8B;AAC9B,iCAAiC;AACjC,8BAA8B;AAC9B,+BAA+B;AAC/B,kCAAkC;AAClC,iCAAiC;AACjC,gCAAgC;AAChC,gCAAgC;AAChC,gCAAgC;AAChC,+BAA+B;AAC/B,iCAAiC;AACjC,sCAAsC;AACtC,oCAAoC;AACpC,gCAAgC;AAChC,gCAAgC;AAChC,mCAAmC;AACnC,wCAAwC",
+"sources": ["../sass/main.scss"],
 "names": [],
 "file": "main.css"
 }

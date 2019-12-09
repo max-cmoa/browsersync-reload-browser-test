@@ -1,37 +1,37 @@
 
 // include all utility sass, which should come first
-@import "partials/utility/animations";
-@import "partials/utility/variables";
-@import "partials/utility/fonts";
-@import "partials/utility/gridSettings";
-@import "partials/utility/mixins";
+@use "/partials/utility/animations.scss";
+@use "/partials/utility/variables.scss";
+@use "/partials/utility/_fonts";
+@use "partials/utility/_gridSettings";
+@use "partials/utility/_mixins";
 
 // include all layout sass
-@import "partials/layouts/boxModel";
-@import "partials/layouts/content";
-@import "partials/layouts/footer";
-@import "partials/layouts/header";
-@import "partials/layouts/navigation";
-@import "partials/layouts/section";
-@import "partials/layouts/typography";
+@use "partials/layouts/_boxModel";
+@use "partials/layouts/_content";
+@use "partials/layouts/_footer";
+@use "partials/layouts/_header";
+@use "partials/layouts/_navigation";
+@use "partials/layouts/_section";
+@use "partials/layouts/_typography";
 
 // include all elements sass
-@import "partials/elements/anchors";
-@import "partials/elements/blockquotes";
-@import "partials/elements/body";
-@import "partials/elements/buttons";
-@import "partials/elements/divs";
-@import "partials/elements/forms";
-@import "partials/elements/headings";
-@import "partials/elements/iframes";
-@import "partials/elements/images";
-@import "partials/elements/inputs";
-@import "partials/elements/labels";
-@import "partials/elements/logos";
-@import "partials/elements/options";
-@import "partials/elements/orderedlists";
-@import "partials/elements/paragraphs";
-@import "partials/elements/quotes";
-@import "partials/elements/tables";
-@import "partials/elements/textareas";
-@import "partials/elements/unorderedlists";
+@use "partials/elements/_anchors";
+@use "partials/elements/_blockquotes";
+@use "partials/elements/_body";
+@use "partials/elements/_buttons";
+@use "partials/elements/_divs";
+@use "partials/elements/_forms";
+@use "partials/elements/_headings";
+@use "partials/elements/_iframes";
+@use "partials/elements/_images";
+@use "partials/elements/_inputs";
+@use "partials/elements/_labels";
+@use "partials/elements/_logos";
+@use "partials/elements/_options";
+@use "partials/elements/_orderedlists";
+@use "partials/elements/_paragraphs";
+@use "partials/elements/_quotes";
+@use "partials/elements/_tables";
+@use "partials/elements/_textareas";
+@use "partials/elements/_unorderedlists";
