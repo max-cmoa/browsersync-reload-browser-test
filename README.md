@@ -2,7 +2,7 @@
 
   A starter theme for beginners. This theme separates all templates into their own folders for organizational purposes. If you want to add a template, it is recommended that you add your template to the appropriate template directory.
 
-  Sass needs to use @use instead of @import
+  Sass needs to use @use instead of @import. Please note that the package **gulp-sass** does not work with the new syntax @use. Until then, use the Sass on command line or Sass watch.
 
   Remember these words: **Make one change/save at a time, and reload your browser to see if your change worked**.
 
@@ -29,13 +29,13 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
       To do a build without using browsersync.
       $ gulp
 
-      To compile sass
+      To compile sass PLEASE NOTE THAT THIS IS BROKEN, USE SASS ON COMMAND LINE INSTEAD
       $ gulp sassTask
       Or run normal gulp which will run other default tasks
       $ gulp
 
       To use browsersync to watch files and reload when changes are detected. Note: you don't have to use Local By Flywheel. Proxy will be either your localhost or your websigte name in Local by Flywheel.
-      1. Open **gulpfile.js/tasks/browserSync.js** and change the proxy to the proper proxy.
+      1. Open **gulpfile.js/tasks/browsersync.js** and change the proxy to the proper proxy.
       2. $ gulp watch
 
 # Directories and Files explained
