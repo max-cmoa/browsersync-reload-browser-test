@@ -1,48 +1,52 @@
-/* we @import .scss instead of .sass due to .scss having the easier syntax to @import
-   this file is @importd to include various sass files
-   the purpose of having these sass partials is for modular design.
+
+/*
+
+   we .scss instead of .sass due to .scss having the easier syntax to @use
+   this file is to include various sass files.
+
+   The purpose of having these sass partials is for modular design.
 
    If you plan to add a partial file be sure to include an underscore
-   and add @import "partials/directoryName/_yourFileName.scss"; to this
-   main.scss file.
+   and add @use "partials/directoryName/_yourFileName.scss"; to this
+   main.scss file and any files you are using data from a partial.
 
    Also if you are using browsersync, make sure your changes are applied.
-   You may need to restart browsersync
+   You may need to restart browsersync so your changes are applied.
 */
 
 // include all utility sass, which should come first
-@import "partials/utility/animations";
-@import "partials/utility/fonts";
-@import "partials/utility/grid-settings";
-@import "partials/utility/mixins";
-@import "partials/utility/color-variables";
+@use "partials/utility/animations";
+@use "partials/utility/fonts";
+@use "partials/utility/grid-settings";
+@use "partials/utility/mixins";
+@use "partials/utility/color-variables";
 
 // include all layout sass
-@import "partials/layouts/box-model";
-@import "partials/layouts/content";
-@import "partials/layouts/footer";
-@import "partials/layouts/header";
-@import "partials/layouts/navigation";
-@import "partials/layouts/section";
-@import "partials/layouts/typography";
+@use "partials/layouts/box-model";
+@use "partials/layouts/content";
+@use "partials/layouts/footer";
+@use "partials/layouts/header";
+@use "partials/layouts/navigation";
+@use "partials/layouts/section";
+@use "partials/layouts/typography";
 
 // include all elements sass
-@import "partials/elements/anchors";
-@import "partials/elements/blockquotes";
-@import "partials/elements/body";
-@import "partials/elements/buttons";
-@import "partials/elements/divs";
-@import "partials/elements/forms";
-@import "partials/elements/headings";
-@import "partials/elements/iframes";
-@import "partials/elements/images";
-@import "partials/elements/inputs";
-@import "partials/elements/labels";
-@import "partials/elements/logos";
-@import "partials/elements/options";
-@import "partials/elements/orderedlists";
-@import "partials/elements/paragraphs";
-@import "partials/elements/quotes";
-@import "partials/elements/tables";
-@import "partials/elements/textareas";
-@import "partials/elements/unorderedlists";
+@use "partials/elements/anchors";
+@use "partials/elements/blockquotes";
+@use "partials/elements/body";
+@use "partials/elements/buttons";
+@use "partials/elements/divs";
+@use "partials/elements/forms";
+@use "partials/elements/headings";
+@use "partials/elements/iframes";
+@use "partials/elements/images";
+@use "partials/elements/inputs";
+@use "partials/elements/labels";
+@use "partials/elements/logos";
+@use "partials/elements/options";
+@use "partials/elements/orderedlists";
+@use "partials/elements/paragraphs";
+@use "partials/elements/quotes";
+@use "partials/elements/tables";
+@use "partials/elements/textareas";
+@use "partials/elements/unorderedlists";

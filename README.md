@@ -1,11 +1,13 @@
 # simple-starter-theme
 
-  A starter theme for beginners. This theme separates all templates into their own folders for organizational purposes. If you want to add a template, it is recommended that you add your template to the appropriate template directory.
+  An organized starter theme for beginners. This theme separates all templates into their own folders for organizational purposes. If you want to add a template, it is recommended that you add your template to the appropriate directory. This theme uses <ins>[Sass](https://sass-lang.com/)</ins> and <ins>[Gulp](https://gulpjs.com/)</ins> to prepare your theme to be placed on your website.
 
-  For css to work, you must either run
+  PLEASE NOTE **gulp-sass** will not compile .scss to .css due to new syntax.
+  For sass to compile to css, you must either run
   $ gulp
   or
   $ gulp sassTask
+  on command line
 
   Sass needs to use @use instead of @import. Please note that the package **gulp-sass** does not work with the new syntax @use. Until then, use the Sass on command line or Sass watch.
 
