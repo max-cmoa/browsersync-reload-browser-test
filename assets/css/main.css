@@ -1,0 +1,40 @@
+/* we @import .scss instead of .sass due to .scss having the easier syntax to @import
+   this file is @importd to include various sass files
+   the purpose of having these sass partials is for modular design.
+
+   If you plan to add a partial file be sure to include an underscore
+   and add @import "partials/directoryName/_yourFileName.scss"; to this
+   main.scss file.
+
+   Also if you are using browsersync, make sure your changes are applied.
+   You may need to restart browsersync
+*/
+.reusedFont {
+  color: magenta;
+  font-size: 24px;
+  font-family: Tahoma; }
+
+/*
+   avoid repetitive code with sass variables and don't be afraid to add them
+   to other sass files. utility sass is included first
+*/
+.standardHeadingOne {
+  font-size: 24px; }
+
+.list-formatting {
+  color: red;
+  font-size: 24px;
+  list-style-type: square; }
+
+.standardParagraph {
+  color: black;
+  font-size: 40px; }
+  @media only screen and (max-device-width: 415px) {
+    .standardParagraph {
+      color: red;
+      font-size: 20px; } }
+
+.list-formatting {
+  color: red;
+  font-size: 24px;
+  list-style-type: square; }

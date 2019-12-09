@@ -13,7 +13,7 @@ add_theme_support( 'post-thumbnails', [ 'post', 'page' ] );
 function simple_starter_theme_enqueue_css() {
 
       // main represents main.css, next arg is path to main.css, followed by empty array, time() so no cache issues, and all for all media
-    wp_enqueue_style( 'main', get_template_directory_uri() . '/production/assets/sass/main.css', [], time(), 'all' );
+    wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.css', [], time(), 'all' );
 
 }
 
@@ -24,7 +24,7 @@ add_action('wp_enqueue_scripts', 'simple_starter_theme_enqueue_css');
 function simple_starter_theme_enqueue_javascript() {
 
   // main represents main.js, next arg is path to main.js, followed by empty array, time() so no cache issues, and true so javascript is in the footer
-  wp_enqueue_script('main', get_template_directory_uri() . '/production/assets/javascript/main.js', [], time(), true);
+  wp_enqueue_script('main', get_template_directory_uri() . '/assets/javascript/main.js', [], time(), true);
 
 }
 
