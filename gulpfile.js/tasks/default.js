@@ -30,7 +30,7 @@ var sassTask = require('./sass.js');
 var javascriptTask = require('./javascript.js');
 
 // include methods from phpFallback.js
-var phpFallbackTask = require('./php-fallback.js');
+var phpFallbackTask = require('./php-fallback-template.js');
 
 // include methods from php-comment-templates.js
 var phpCommentTemplatesTask = require('./php-comment-templates.js');

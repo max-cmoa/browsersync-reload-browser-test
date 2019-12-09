@@ -56,7 +56,7 @@ var browsersyncWatchTask = function () {
   // on any changed javascript files, bundle the javascript then reload the browser
   gulp.watch('assets/javascript/*.js').on('change', gulp.series(javascriptTask, browsersync.reload));
 
-  var phpFallbackTask = require('./php-fallback.js');
+  var phpFallbackTask = require('./php-fallback-template.js');
 
   gulp.watch('./index.php').on('change', gulp.series(phpFallbackTask, browsersync.reload));
 
