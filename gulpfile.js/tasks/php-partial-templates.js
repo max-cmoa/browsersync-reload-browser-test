@@ -18,7 +18,7 @@ var phpPartialsTask = function() {
                     'partial-templates/footers/**/*.php',
                     'partial-templates/headers/**/*.php',
                     'partial-templates/navigations/**/*.php',
-                  ], { base: 'src' },
+                  ], { base: 'partial-templates' },
                 )
     .pipe(gulp.dest('production/partial-templates/')); // place php partials
 };
