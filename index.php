@@ -5,7 +5,7 @@
 
    <h1 class='standardHeadingOne'>Welcome to the simple-starter-theme</h1>
 
-   <p class='standardParagraph'>Using index.php fallback template.
+   <p class='standardParagraph'>This file is index.php, a WordPress fallback template.
    You should not use index.php, you should use the appropriate template
  file for a given post or page.</p>
 
