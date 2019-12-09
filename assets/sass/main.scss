@@ -15,9 +15,10 @@
 @import "partials/utility/fonts";
 @import "partials/utility/grid-settings";
 @import "partials/utility/mixins";
-@import "partials/utility/variables";
+@import "partials/utility/color-variables";
 
 // include all layout sass
+@import "partials/layouts/box-model";
 @import "partials/layouts/content";
 @import "partials/layouts/footer";
 @import "partials/layouts/header";
