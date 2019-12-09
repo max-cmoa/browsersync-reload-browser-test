@@ -6,7 +6,7 @@
 var gulp = require('gulp');
 
 // include methods from css.js
-var cssTask = require('./css.js');
+var metaCssTask = require('./meta-css.js');
 
 // include methods from fonts.js
 var fontsTask = require('./fonts.js');
@@ -41,8 +41,8 @@ var defaultGulpTask = function () {
 
    console.log("default task Started");
 
-   // call css tasks
-   cssTask();
+   // call meta css tasks
+   metaCssTask();
 
    // call fonts tasks
    fontsTask();

@@ -1,5 +1,7 @@
 /*
-    gulp the style.css WordPress config file for production
+    gulp the style.css WordPress config file for production.
+    This file is used to display metadata for the simple-starter-theme
+    in the WordPress dashboard > themes area.
 */
 
 var gulp = require('gulp');
