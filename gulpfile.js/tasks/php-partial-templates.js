@@ -5,13 +5,7 @@
 
 var gulp = require('gulp');
 
-/*
-var phpPartialsTask = function() {
-  return gulp.src('partial-templates/*.php')
-    .pipe(gulp.dest('production/partial-templates/')); // place php partials
-};
-*/
-
+// copies structure of directory and files within those directories
 var phpPartialsTask = function() {
   return gulp.src(
                   [
