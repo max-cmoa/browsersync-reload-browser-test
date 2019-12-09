@@ -21,19 +21,19 @@ var sassTask = require('./sass.js');
 var javascriptTask = require('./javascript.js');
 
 // include methods from phpFallback.js
-var phpFallbackTask = require('./phpFallback.js');
+var phpFallbackTask = require('./php-fallback.js');
 
 // include methods from phpPages.js
-var phpPagesTask = require('./phpPages.js')
+var phpPagesTask = require('./php-pages.js')
 
 // include methods from phpPartials.js
-var phpPartialsTask = require('./phpPartials.js');
+var phpPartialsTask = require('./php-partials.js');
 
 // include methods from phpPosts.js
-var phpPostsTask = require('./phpPosts.js');
+var phpPostsTask = require('./php-posts.js');
 
-// include methods from browserSync.js
-var browserSyncWatch = require('./browserSync.js');
+// include methods from browsersync.js
+var browserSyncWatch = require('./browsersync.js');
 
 var defaultGulpTask = function () {
 

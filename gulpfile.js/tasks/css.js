@@ -9,6 +9,6 @@ var cssTask = function() {
     .pipe(gulp.dest('production/')); // directory to be placed in
 };
 
-gulp.task('css', cssTask);
+gulp.task('cssTask', cssTask);
 
 module.exports = cssTask;

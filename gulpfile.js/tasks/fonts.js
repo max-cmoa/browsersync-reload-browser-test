@@ -10,6 +10,6 @@ var fontsTask = function() {
     .pipe(gulp.dest('production/assets/fonts')); // directory to be placed in
 };
 
-gulp.task('fonts', fontsTask);
+gulp.task('fontsTask', fontsTask);
 
 module.exports = fontsTask;

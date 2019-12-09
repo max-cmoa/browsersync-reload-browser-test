@@ -10,6 +10,6 @@ var imagesTask = function() {
     .pipe(gulp.dest('production/assets/images')); // directory to be placed in
 };
 
-gulp.task('images', imagesTask);
+gulp.task('imagesTask', imagesTask);
 
 module.exports = imagesTask;
