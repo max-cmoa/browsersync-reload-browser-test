@@ -2,6 +2,11 @@
 
   A starter theme for beginners. This theme separates all templates into their own folders for organizational purposes. If you want to add a template, it is recommended that you add your template to the appropriate template directory.
 
+  For css to work, you must either run
+  $ gulp
+  or
+  $ gulp sassTask
+
   Sass needs to use @use instead of @import. Please note that the package **gulp-sass** does not work with the new syntax @use. Until then, use the Sass on command line or Sass watch.
 
   Remember these words: **Make one change/save at a time, and reload your browser to see if your change worked**.
