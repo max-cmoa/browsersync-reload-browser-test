@@ -58,6 +58,10 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
 
   * **assets directory** contain fonts, icons, images, javascript, and sass files.
 
+      **css directory** holds css that is compiled through sass used for the theme
+        **main.css file** contains the styles for your theme compiled from sass
+        **main.css.map file** metadata about css, created when sass compiles.
+
       **fonts directory** holds downloaded fonts
 
       **icons directory** holds icons for WordPress admin purposes
