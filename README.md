@@ -2,7 +2,7 @@
 
   An organized starter theme for beginners. This theme separates all templates into their own folders for organizational purposes. If you want to add a template, it is recommended that you add your template to the appropriate directory. This theme uses <ins>[Sass](https://sass-lang.com/)</ins> and <ins>[Gulp](https://gulpjs.com/)</ins> to prepare your theme to be placed on your website.
 
-  Remember these words: **Make one change/save at a time, and reload your browser to see if your change worked**.
+  Remember these words: **Make one change at a time, save your change, and reload your browser to see if your change worked**.
 
 # Starting
 
