@@ -1,19 +1,20 @@
 
 /*
   example class that implements media queries into single class
-  follows the single level of abstraction principle -> Google it
+  follows the single level of abstraction principle
 */
 .mediaQueryBubbling {
 
-  // css for screens larger than mobile devices
-  color: black;
-  font-size:40px;
-
-
-  // for mobile devices smaller than
-  @media only screen and (max-device-width: 415px) {
+  // for phones
+  @media only screen and (max-width: 768px) {
     color: red;
-    font-size:20px;
+    font-size:24px;
+  }
+
+  // for desktop
+ @media only screen and (min-width: 769px) {
+  color: black;
+  font-size:24px;
   }
 
 } // end of class mediaQueryBubbling

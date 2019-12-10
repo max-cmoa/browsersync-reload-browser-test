@@ -1,15 +1,13 @@
-.reusedFont {
-  color: magenta;
-  font-size: 24px;
-  font-family: Tahoma; }
+/*
+  example class that implements media queries into single class
+  follows the single level of abstraction principle
+*/
+@media only screen and (max-width: 768px) {
+  .mediaQueryBubbling {
+    color: red;
+    font-size: 24px; } }
 
-body {
-  background-color: white; }
-
-.standardParagraph {
-  color: black;
-  font-size: 40px; }
-  @media only screen and (max-device-width: 415px) {
-    .standardParagraph {
-      color: red;
-      font-size: 20px; } }
+@media only screen and (min-width: 769px) {
+  .mediaQueryBubbling {
+    color: black;
+    font-size: 24px; } }
