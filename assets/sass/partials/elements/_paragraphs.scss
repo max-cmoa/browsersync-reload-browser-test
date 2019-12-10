@@ -1,5 +1,9 @@
 
-.standardParagraph {
+/*
+  example class that implements media queries into single class
+  follows the single level of abstraction principle -> Google it
+*/
+.mediaQueryBubbling {
 
   // css for screens larger than mobile devices
   color: black;
@@ -12,4 +16,4 @@
     font-size:20px;
   }
 
-}
+} // end of class mediaQueryBubbling
