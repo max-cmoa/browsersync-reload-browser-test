@@ -2,22 +2,6 @@
 
   An organized starter theme for beginners. This theme separates all templates into their own folders for organizational purposes. If you want to add a template, it is recommended that you add your template to the appropriate directory. This theme uses <ins>[Sass](https://sass-lang.com/)</ins> and <ins>[Gulp](https://gulpjs.com/)</ins> to prepare your theme to be placed on your website.
 
-  PLEASE NOTE **gulp-sass** will not compile **@use syntax** .scss to .css due to new syntax. Currently we are using **import**. Gulp syntax update is slow, once updated, sass will need to be changed.
-  The temporary solution is to use the sass command on command line.
-  $ cd assets/sass
-  $ sass main.scss ../css/main.css
-  or get sass to watch for changes
-  $ cd assets/sass
-  $ sass --watch main.scss:../css/main.css
-
-  For sass to compile to css, you must either run
-  $ gulp
-  or
-  $ gulp sassTask
-  on command line
-
-  Sass needs to use @use instead of @import. Please note that the package **gulp-sass** does not work with the new syntax @use. Until then, use the Sass on command line or Sass watch.
-
   Remember these words: **Make one change/save at a time, and reload your browser to see if your change worked**.
 
 # Starting
@@ -130,3 +114,20 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
   * See the <ins>[gulpjs documentation](https://gulpjs.com/docs/en/getting-started/quick-start)</ins>.
   * See the <ins>[Sass documentation](https://sass-lang.com/guide)</ins>, and please note this project uses .scss sass syntax because it is easier to use.
     * Read about <ins>[.scss sass syntax](https://sass-lang.com/documentation/syntax)</ins>.
+
+# Future
+      PLEASE NOTE **gulp-sass** will not compile **@use syntax** .scss to .css due to new syntax. Currently we are using **import**. Gulp syntax update is slow, once updated, sass will need to be changed.
+      The temporary solution is to use the sass command on command line.
+      $ cd assets/sass
+      $ sass main.scss ../css/main.css
+      or get sass to watch for changes
+      $ cd assets/sass
+      $ sass --watch main.scss:../css/main.css
+
+      For sass to compile to css, you must either run
+      $ gulp
+      or
+      $ gulp sassTask
+      on command line
+
+      Sass needs to use @use instead of @import. Please note that the package **gulp-sass** does not work with the new syntax @use. Until then, use the Sass on command line or Sass watch.

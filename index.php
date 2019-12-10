@@ -1,15 +1,12 @@
-<!-- get the file main-header.php from templates/partials/headers/ -->
-<!-- if this rendered, then you will see the css applied -->
+
+<!-- get the header template-->
 <?php get_template_part('partial-templates/headers/main-header'); ?>
-  <body>
 
-   <h1 class='standardHeadingOne'>Welcome to the simple-starter-theme</h1>
+   <h1>Welcome to the simple-starter-theme</h1>
 
-   <p class='standardParagraph'>This file is index.php, a WordPress fallback template.
-   You should not use index.php, you should use the appropriate template
- file for a given post or page.</p>
+   <h2>This file "index.php", is a WordPress fallback template.
+   index.php should never be a used template. One should use the appropriate template
+ file for a given post or page.</h2>
 
-  </body>
-<!-- get the file main-footer.php from templates/partials/headers/ -->
-<!-- be sure to look in the developer console to see the javascript output -->
+<!-- get the footer template -->
 <?php get_template_part('partial-templates/footers/main-footer'); ?>

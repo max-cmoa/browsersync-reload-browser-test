@@ -11,3 +11,5 @@
   <?php wp_head(); ?>
 
  </head>
+<body>
+  <p>This is an included template header from partial-templates/headers/main-header.php</p>
