@@ -116,8 +116,8 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
     * Read about <ins>[.scss sass syntax](https://sass-lang.com/documentation/syntax)</ins>.
 
 # Future
-      PLEASE NOTE **gulp-sass** will not compile **@use syntax** .scss to .css due to new syntax. Currently we are using **import**. Gulp syntax update is slow, once updated, sass will need to be changed.
-      The temporary solution is to use the sass command on command line.
+ PLEASE NOTE **gulp-sass** will not compile **@use syntax** .scss to .css due to new syntax. Currently we are using **import**. Gulp syntax update is slow, once updated, sass will need to be changed.
+  The temporary solution is to use the sass command on command line.
       $ cd assets/sass
       $ sass main.scss ../css/main.css
       or get sass to watch for changes
