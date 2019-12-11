@@ -1,9 +1,9 @@
 
 // include all utility sass, which should come first
-@import "partials/utility/animations.scss";
-@import "partials/utility/color-variables.scss";
-@import "partials/utility/fonts";
-@import "partials/utility/mixins";
+@import "partials/modifier/animations.scss";
+@import "partials/modifier/color-variables.scss";
+@import "partials/modifier/fonts";
+@import "partials/modifier/mixins";
 
 // include all blocks sass
 @import "partials/blocks/box-model";
