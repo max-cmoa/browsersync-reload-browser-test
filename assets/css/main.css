@@ -3,11 +3,11 @@
   follows the single level of abstraction principle
 */
 @media only screen and (max-width: 768px) {
-  .mediaQueryBubbling {
+  .media-query-bubbling {
     color: red;
     font-size: 24px; } }
 
 @media only screen and (min-width: 769px) {
-  .mediaQueryBubbling {
+  .media-query-bubbling {
     color: black;
     font-size: 24px; } }

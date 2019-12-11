@@ -3,7 +3,7 @@
   example class that implements media queries into single class
   follows the single level of abstraction principle
 */
-.mediaQueryBubbling {
+.media-query-bubbling {
 
   // for phones
   @media only screen and (max-width: 768px) {
@@ -17,4 +17,4 @@
   font-size:24px;
   }
 
-} // end of class mediaQueryBubbling
+} // end of class media-query-bubbling
