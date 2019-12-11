@@ -3,13 +3,13 @@
 @import "partials/utility/animations.scss";
 @import "partials/utility/color-variables.scss";
 @import "partials/utility/fonts";
-@import "partials/utility/grid-settings";
 @import "partials/utility/mixins";
 
 // include all blocks sass
 @import "partials/blocks/box-model";
 @import "partials/blocks/content";
 @import "partials/blocks/footer";
+@import "partials/blocks/grid-settings";
 @import "partials/blocks/header";
 @import "partials/blocks/navigation";
 @import "partials/blocks/section";
