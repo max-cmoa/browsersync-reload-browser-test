@@ -39,19 +39,19 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
 
   * **assets directory** contain fonts, icons, images, javascript, and sass files.
 
-      **css directory** holds css that is compiled through sass used for the theme
-        **main.css file** contains the styles for your theme compiled from sass
-        **main.css.map file** metadata about css, created when sass compiles.
+    * **css directory** holds css that is compiled through sass used for the theme
+      * **main.css file** contains the styles for your theme compiled from sass
+      * **main.css.map file** metadata about css, created when sass compiles.
 
-      **fonts directory** holds downloaded fonts
+    * **fonts directory** holds downloaded fonts
 
-      **icons directory** holds icons for WordPress admin purposes
+    * **icons directory** holds icons for WordPress admin purposes
 
-      **images directory** holds image assets for use on your website
+    * **images directory** holds image assets for use on your website
 
-      **javascript directory** holds javascript files for theme only!
+    * **javascript directory** holds javascript files for theme only!
 
-      **sass directory** holds sassy css and partials. The idea is for css to be modular rather than programming one gigantic css file. In the end, you will compile your Sass into one css file. Think local development with (Sass) vs production (Css).
+    * **sass directory** holds sassy css and partials. The idea is for css to be modular rather than programming one gigantic css file. In the end, you will compile your Sass into one css file. Think local development with (Sass) vs production (Css).
 
   * **node_modules directory** (not commited because of .gitignore), contains files installed when $ npm install is ran.
 
@@ -59,8 +59,8 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
 
   * **gulpfile.js directory** contains abstracted gulp tasks for making the production version of this theme.
 
-      **gulpfile.js/tasks** contains files which each handle a task for a related file or directory.
-     **gulpfile.js/index.js** is used to require all of the tasks in the tasks directory
+    * **gulpfile.js/tasks** contains files which each handle a task for a related file or directory.
+    * **gulpfile.js/index.js** is used to require all of the tasks in the tasks directory
 
   * **comment-templates directory** contains custom comment templates, which one can use to format how comments are displayed. Uses function
   get_template_part('../partial-templates/footers/main-footer'); to
