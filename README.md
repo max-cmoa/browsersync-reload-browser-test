@@ -72,15 +72,15 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
 
   *  **post-templates directory** contains custom post templates to give a different look and feel for a post **/wp-admin > dashboard > Posts > Post Attributes > Template > select zebra from drop down.**.
 
-    **partial-templates directory** for partials to be included on multiple pages or posts.
-        **partial-templates/footers directory** contains footer partials
-          **main-footer.php** contains code for footer of website
+  *  **partial-templates directory** for partials to be included on multiple pages or posts.
+      * **partial-templates/footers directory** contains footer partials
+        * **main-footer.php** contains code for footer of website
 
-        **partial-templates/headers directory** contains header partials
-          **main-header.php** contains code for header of website
+      * **partial-templates/headers directory** contains header partials
+        * **main-header.php** contains code for header of website
 
-        **partial-templates/navigations directory** contains navigation partials
-          **main-navigation.php** contains code for navigation of website
+      * **partial-templates/navigations directory** contains navigation partials
+        * **main-navigation.php** contains code for navigation of website
 
   * **.gitignore file** contains directories and files that will not be commited/saved to Github.
 
