@@ -1,3 +1,4 @@
+@use '../modifier/color-variables';
 
 /*
   example class that implements media queries into single class
@@ -7,7 +8,7 @@
 
   // for phones
   @media only screen {
-    color: red;
+    color: color-variables.$text-color;
     font-size:24px;
   }
 
