@@ -29,11 +29,6 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
       To do a build without using browsersync.
       $ gulp
 
-      To compile sass PLEASE NOTE THAT THIS IS BROKEN, USE SASS ON COMMAND LINE INSTEAD
-      $ gulp sassTask
-      Or run normal gulp which will run other default tasks
-      $ gulp
-
       To use browsersync to watch files and reload when changes are detected. Note: you don't have to use Local By Flywheel. Proxy will be either your localhost or your websigte name in Local by Flywheel.
       1. Open **gulpfile.js/tasks/browsersync.js** and change the proxy to the proper proxy.
       2. $ gulp watch
@@ -57,7 +52,6 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
       **javascript directory** holds javascript files for theme only!
 
       **sass directory** holds sassy css and partials. The idea is for css to be modular rather than programming one gigantic css file. In the end, you will compile your Sass into one css file. Think local development with (Sass) vs production (Css).
-      Currently **gulp-sass is broken with the new syntax**.
 
   * **node_modules directory** (not commited because of .gitignore), contains files installed when $ npm install is ran.
 
