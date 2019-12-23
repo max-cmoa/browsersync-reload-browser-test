@@ -2,7 +2,7 @@
 
   An organized starter theme for beginners. This theme separates all templates into their own folders for organizational purposes. If you want to add a template, it is recommended that you add your template to the appropriate directory. This theme uses <ins>[Sass](https://sass-lang.com/)</ins> and <ins>[Gulp](https://gulpjs.com/)</ins> to prepare your theme to be placed on your website.
 
-  Please see the css class **.media-query-bubbling** located in **assets > sass > partials > elements > _paragraphs.scss** for an example of how to write your Sass to be responsive for multiple screen sizes.
+  Please see the css class **.media-query-bubbling** located in **assets > sass > partials > elements > _paragraphs.scss** for an example of how to write your Sass to be responsive for phone or desktop screen sizes.
 
   Remember these words: **Make one change at a time, save your change, and reload your browser to see if your change worked**.
 
@@ -133,3 +133,7 @@ Download or $ git clone uri-for-simple-starter-theme to your computer. Then plac
       on command line
 
       Sass needs to use @use instead of @import. Please note that the package **gulp-sass** does not work with the new syntax @use. Until then, use the Sass on command line or Sass watch.
+
+      To see what version of sass you have
+
+      $ sass --version
