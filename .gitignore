@@ -7,8 +7,10 @@
 
 # ignore the Mac file that stores meta-data about file location in a folder
 .DS_Store
+
 # ignore node_modules directory due to the fact they take up a large amount of space
 node_modules
+
 # ignore production directory, which contains gulped files to be placed on the server
 # that displays your website
 production

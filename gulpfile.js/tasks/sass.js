@@ -12,8 +12,7 @@ sass.compiler = require('dart-sass');
 var sassTask = function() {
   return gulp.src('./assets/sass/main.scss') // compile sass file
     .pipe(sass().on('error', sass.logError)) // compile sass to css
-    .pipe(gulp.dest('assets/css')) // directory to place main.css in
-    .pipe(gulp.dest('production/assets/css')); // place in production folder
+    .pipe(gulp.dest('assets/css')); // directory to place main.css in
 };
 
 gulp.task('sassTask', sassTask);

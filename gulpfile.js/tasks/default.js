@@ -29,6 +29,9 @@ var imagesTask = require('./images.js');
 // include methods from sass.js
 var sassTask = require('./sass.js');
 
+// include methods from css.js
+var cssTask = require('./css.js');
+
 // include methods from javascript.js
 var javascriptTask = require('./javascript.js');
 
@@ -56,7 +59,11 @@ var defaultGulpTask = function () {
 
    console.log("default task Started");
 
-   // call meta css tasks
+   // required that sass is compiled to css before processing main.css file
+   let runSassBeforeCssTask = gulp.series('sassTask', 'cssTask');
+   runSassBeforeCssTask();
+
+   // place meta styles.css in production
    metaCssTask();
 
    // call meta package.json tasks
@@ -76,9 +83,6 @@ var defaultGulpTask = function () {
 
    // call images tasks
    imagesTask();
-
-   // call sass tasks
-   sassTask();
 
    // used to bundle javascript files because browsersync won't update them
    javascriptTask();

@@ -6,11 +6,11 @@
 
 var gulp = require('gulp');
 
-var cssTask = function() {
+var metaCssTask = function() {
   return gulp.src('./style.css') // files to be bundled
     .pipe(gulp.dest('production/')); // directory to be placed in
 };
 
-gulp.task('cssTask', cssTask);
+gulp.task('metaCssTask', metaCssTask);
 
-module.exports = cssTask;
+module.exports = metaCssTask;
